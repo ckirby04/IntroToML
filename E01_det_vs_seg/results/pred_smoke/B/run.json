@@ -1,0 +1,23 @@
+{
+ "arm": "B",
+ "trainer": "E01HeatmapTrainer",
+ "checkpoint": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\data\\nnUNet_results\\Dataset901_E01T1c\\E01HeatmapTrainer__nnUNetPlans__3d_fullres\\fold_0\\checkpoint_final.pth",
+ "checkpoint_sha256": "93ae9e401acf97a4aaab4e5324658fdd2edcd7b28339e3234b208bf10b595d42",
+ "epoch": 250,
+ "mirror_axes": [
+  0,
+  1,
+  2
+ ],
+ "tile_step_size": 0.5,
+ "use_gaussian": true,
+ "use_mirroring": true,
+ "precision": "fp32",
+ "b_wrapper": "cat([0, logit]) -> softmax[1] = sigmoid(logit)",
+ "cases": "smoke",
+ "n_cases": 2,
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "seconds": 14.1,
+ "utc": "2026-11-13T19:11:16Z",
+ "missing": []
+}

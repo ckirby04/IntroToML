@@ -1,0 +1,152 @@
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+E01 arm A (nnUNetTrainer_250epochs) on NVIDIA GeForce RTX 3070 Ti; seed 1600; out G:\BrainMetShare\experiments\E01_det_vs_seg\data\nnUNet_results\Dataset901_E01T1c\nnUNetTrainer_250epochs__nnUNetPlans__3d_fullres\fold_0
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+2026-11-09 17:46:23.336076: do_dummy_2d_data_aug: False
+2026-11-09 17:46:23.337515: Using splits from existing split file: G:\BrainMetShare\experiments\E01_det_vs_seg\data\nnUNet_preprocessed\Dataset901_E01T1c\splits_final.json
+2026-11-09 17:46:23.342515: The split file contains 1 splits.
+2026-11-09 17:46:23.346660: Desired fold for training: 0
+2026-11-09 17:46:23.351799: This split has 357 training and 97 validation cases.
+using pin_memory on device 0
+using pin_memory on device 0
+
+This is the configuration used by this training:
+Configuration name: 3d_fullres
+ {'data_identifier': 'nnUNetPlans_3d_fullres', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [160, 128, 112], 'median_image_size_in_voxels': [172.0, 137.0, 137.0], 'spacing': [1.0000213384628296, 1.0, 1.0000213384628296], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [True], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 6, 'features_per_stage': [32, 64, 128, 256, 320, 320], 'conv_op': 'torch.nn.modules.conv.Conv3d', 'kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]], 'strides': [[1, 1, 1], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 1]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm3d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': False} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset901_E01T1c', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [1.0000213384628296, 1.0, 1.0000213384628296], 'original_median_shape_after_transp': [172, 137, 137], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [1, 0, 2], 'transpose_backward': [1, 0, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 11.764123916625977, 'mean': 1.5449607372283936, 'median': 1.3542710542678833, 'min': -8.308382034301758, 'percentile_00_5': -1.3407433032989502, 'percentile_99_5': 6.0364909172058105, 'std': 1.3492352962493896}}} 
+
+2026-11-09 17:46:35.070389: Unable to plot network architecture:
+2026-11-09 17:46:35.076616: No module named 'hiddenlayer'
+2026-11-09 17:46:35.153874: 
+2026-11-09 17:46:35.159919: Epoch 30
+2026-11-09 17:46:35.166986: Current learning rate: 0.00891
+2026-11-09 17:48:14.838701: train_loss -0.6802
+2026-11-09 17:48:14.839225: val_loss -0.6726
+2026-11-09 17:48:14.849114: Pseudo dice [np.float32(0.8102)]
+2026-11-09 17:48:14.858829: Epoch time: 99.69 s
+2026-11-09 17:48:14.867438: Yayy! New best EMA pseudo Dice: 0.795199990272522
+2026-11-09 17:48:15.970852: 
+2026-11-09 17:48:15.980122: Epoch 31
+2026-11-09 17:48:15.986912: Current learning rate: 0.00888
+2026-11-09 17:49:45.870684: train_loss -0.694
+2026-11-09 17:49:45.871107: val_loss -0.5993
+2026-11-09 17:49:45.880275: Pseudo dice [np.float32(0.8276)]
+2026-11-09 17:49:45.889167: Epoch time: 89.9 s
+2026-11-09 17:49:45.897473: Yayy! New best EMA pseudo Dice: 0.7985000014305115
+2026-11-09 17:49:46.949949: 
+2026-11-09 17:49:46.957698: Epoch 32
+2026-11-09 17:49:46.964778: Current learning rate: 0.00884
+2026-11-09 17:51:16.800701: train_loss -0.7114
+2026-11-09 17:51:16.801159: val_loss -0.6843
+2026-11-09 17:51:16.812976: Pseudo dice [np.float32(0.8063)]
+2026-11-09 17:51:16.821000: Epoch time: 89.85 s
+2026-11-09 17:51:16.847644: Yayy! New best EMA pseudo Dice: 0.7991999983787537
+2026-11-09 17:51:17.909987: 
+2026-11-09 17:51:17.915005: Epoch 33
+2026-11-09 17:51:17.920124: Current learning rate: 0.0088
+2026-11-09 17:52:47.851853: train_loss -0.6978
+2026-11-09 17:52:47.870874: val_loss -0.6692
+2026-11-09 17:52:47.879936: Pseudo dice [np.float32(0.8343)]
+2026-11-09 17:52:47.889103: Epoch time: 89.94 s
+2026-11-09 17:52:47.897494: Yayy! New best EMA pseudo Dice: 0.8026999831199646
+2026-11-09 17:52:49.019292: 
+2026-11-09 17:52:49.028293: Epoch 34
+2026-11-09 17:52:49.035270: Current learning rate: 0.00877
+2026-11-09 17:54:19.065736: train_loss -0.712
+2026-11-09 17:54:19.075732: val_loss -0.6918
+2026-11-09 17:54:19.084794: Pseudo dice [np.float32(0.8405)]
+2026-11-09 17:54:19.112043: Epoch time: 90.05 s
+2026-11-09 17:54:19.121554: Yayy! New best EMA pseudo Dice: 0.8065000176429749
+2026-11-09 17:54:20.178044: 
+2026-11-09 17:54:20.186553: Epoch 35
+2026-11-09 17:54:20.194850: Current learning rate: 0.00873
+2026-11-09 17:55:50.184027: train_loss -0.7042
+2026-11-09 17:55:50.206113: val_loss -0.6351
+2026-11-09 17:55:50.216322: Pseudo dice [np.float32(0.8067)]
+2026-11-09 17:55:50.225598: Epoch time: 90.01 s
+2026-11-09 17:55:50.269150: Yayy! New best EMA pseudo Dice: 0.8065000176429749
+2026-11-09 17:55:51.248343: 
+2026-11-09 17:55:51.253671: Epoch 36
+2026-11-09 17:55:51.258778: Current learning rate: 0.00869
+2026-11-09 17:57:21.227917: train_loss -0.6601
+2026-11-09 17:57:21.236642: val_loss -0.6599
+2026-11-09 17:57:21.245392: Pseudo dice [np.float32(0.7981)]
+2026-11-09 17:57:21.254262: Epoch time: 89.98 s
+2026-11-09 17:57:21.998690: 
+2026-11-09 17:57:22.007778: Epoch 37
+2026-11-09 17:57:22.013737: Current learning rate: 0.00866
+2026-11-09 17:58:51.819460: train_loss -0.6823
+2026-11-09 17:58:51.829516: val_loss -0.6528
+2026-11-09 17:58:51.837963: Pseudo dice [np.float32(0.8133)]
+2026-11-09 17:58:51.846439: Epoch time: 89.82 s
+2026-11-09 17:58:52.658988: 
+2026-11-09 17:58:52.664223: Epoch 38
+2026-11-09 17:58:52.668907: Current learning rate: 0.00862
+2026-11-09 18:00:22.498477: train_loss -0.7026
+2026-11-09 18:00:22.507412: val_loss -0.6848
+2026-11-09 18:00:22.515989: Pseudo dice [np.float32(0.8301)]
+2026-11-09 18:00:22.525178: Epoch time: 89.84 s
+2026-11-09 18:00:22.590205: Yayy! New best EMA pseudo Dice: 0.8087999820709229
+2026-11-09 18:00:23.621083: 
+2026-11-09 18:00:23.626384: Epoch 39
+2026-11-09 18:00:23.630864: Current learning rate: 0.00858
+2026-11-09 18:01:53.639895: train_loss -0.7039
+2026-11-09 18:01:53.656209: val_loss -0.6863
+2026-11-09 18:01:53.665879: Pseudo dice [np.float32(0.8153)]
+2026-11-09 18:01:53.673798: Epoch time: 90.02 s
+2026-11-09 18:01:54.259955: Yayy! New best EMA pseudo Dice: 0.809499979019165
+2026-11-09 18:01:54.946258: 
+2026-11-09 18:01:54.953300: Epoch 40
+2026-11-09 18:01:54.960413: Current learning rate: 0.00855
+2026-11-09 18:03:25.270276: train_loss -0.6924
+2026-11-09 18:03:25.280605: val_loss -0.6641
+2026-11-09 18:03:25.289349: Pseudo dice [np.float32(0.8015)]
+2026-11-09 18:03:25.298572: Epoch time: 90.32 s
+2026-11-09 18:03:26.116628: 
+2026-11-09 18:03:26.126852: Epoch 41
+2026-11-09 18:03:26.135163: Current learning rate: 0.00851
+2026-11-09 18:04:56.307070: train_loss -0.6809
+2026-11-09 18:04:56.317362: val_loss -0.6506
+2026-11-09 18:04:56.326423: Pseudo dice [np.float32(0.8365)]
+2026-11-09 18:04:56.351972: Epoch time: 90.19 s
+2026-11-09 18:04:56.361638: Yayy! New best EMA pseudo Dice: 0.8115000128746033
+2026-11-09 18:04:57.360235: 
+2026-11-09 18:04:57.368347: Epoch 42
+2026-11-09 18:04:57.376701: Current learning rate: 0.00847
+2026-11-09 18:06:27.524658: train_loss -0.6887
+2026-11-09 18:06:27.535214: val_loss -0.5877
+2026-11-09 18:06:27.543040: Pseudo dice [np.float32(0.7991)]
+2026-11-09 18:06:27.551613: Epoch time: 90.16 s
+2026-11-09 18:06:28.444104: 
+2026-11-09 18:06:28.451892: Epoch 43
+2026-11-09 18:06:28.461580: Current learning rate: 0.00844

@@ -1,0 +1,15 @@
+﻿{
+ "what": "PIPELINE DRY RUN: PilotC fold_0 (1.60 pilot model, Dataset161 grid) - not an E01 result",
+ "n_scans": 97,
+ "n_patients": 66,
+ "n_lesions": 866,
+ "lesions_per_bin": {
+  "<3": 225,
+  "3-10": 549,
+  ">10": 92
+ },
+ "mean_dice@0.5": 0.7687723424937546,
+ "components@0.05": 846,
+ "merged_components@0.05": 5,
+ "redundant_points@0.05": 7
+}

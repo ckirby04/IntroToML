@@ -1,0 +1,311 @@
+2026-11-17T20:09:52Z waiting for 5060ti and C2
+2026-11-17T20:11:52Z 5060ti done
+{"utc": "2026-11-17T15:58:55Z", "event": "job_start", "job": ["--arm", "C2", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\logs\\C2_train_20261117_095855.log"}
+{"utc": "2026-11-17T21:26:28Z", "event": "job_end", "job": ["--arm", "C2", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-17T21:26:28Z", "event": "queue_done"}
+NVIDIA GeForce RTX 5060 Ti, 1402 MiB, 0 %
+NVIDIA GeForce RTX 3070 Ti, 0 MiB, 0 %
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+A 25s
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+B 40s
+{
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "cases": [
+  "A172_Phase_A7_2_00d00h00m_2",
+  "A172_Phase_B7_2_00d04h00m_1",
+  "A172_Phase_D7_2_00d04h00m_4",
+  "BT474_Phase_A3_2_00d00h00m_3",
+  "BT474_Phase_B3_1_04d12h00m_2",
+  "BT474_Phase_C3_1_03d16h00m_1",
+  "BV2_Phase_B4_1_01d20h00m_4",
+  "BV2_Phase_C4_1_02d00h00m_3",
+  "BV2_Phase_D4_1_02d04h00m_2",
+  "Huh7_Phase_A10_1_02d08h00m_1",
+  "Huh7_Phase_A11_1_00d08h00m_4",
+  "Huh7_Phase_A11_2_02d16h00m_3",
+  "MCF7_Phase_E4_2_01d04h00m_3",
+  "MCF7_Phase_F4_2_00d00h00m_2",
+  "MCF7_Phase_G4_1_02d16h00m_1",
+  "SHSY5Y_Phase_B10_1_01d08h00m_4",
+  "SHSY5Y_Phase_C10_1_00d12h00m_3",
+  "SHSY5Y_Phase_C10_2_03d08h00m_2",
+  "SHSY5Y_Phase_D10_2_02d12h00m_1",
+  "SKOV3_Phase_G4_2_02d00h00m_4",
+  "SKOV3_Phase_H4_2_02d04h00m_3",
+  "SkBr3_Phase_E3_2_01d20h00m_2",
+  "SkBr3_Phase_F3_2_01d00h00m_1",
+  "SkBr3_Phase_H3_2_00d00h00m_4"
+ ],
+ "torch": "2.10.0+cu128",
+ "cudnn": 91002,
+ "tf32_conv": true,
+ "tf32_matmul": false,
+ "A": {
+  "sha256": "4996310d98f11ea856cc6f5d941e909e993b4d5c9b1b8c5ba49c1b5060cffd21",
+  "epoch": 250
+ },
+ "B": {
+  "sha256": "558570f3854eb868c17cd611d09012b4cd3cd14e75f64ae74927baa2f7adab30",
+  "epoch": 250
+ },
+ "C2": {
+  "sha256": "03de630e7094ac2cbb044a5636a35af47ac70d8d7a951a05c7dac360210e5bae",
+  "epoch": 39
+ },
+ "seconds": 762.6,
+ "peak_mem_gb": 1.479429632
+}
+{
+ "cases": 24,
+ "gpus": [
+  "NVIDIA GeForce RTX 5060 Ti",
+  "NVIDIA GeForce RTX 3070 Ti"
+ ],
+ "env": {
+  "torch": [
+   "2.10.0+cu128",
+   "2.10.0+cu128"
+  ],
+  "cudnn": [
+   91002,
+   91002
+  ],
+  "tf32_conv": [
+   true,
+   true
+  ],
+  "tf32_matmul": [
+   false,
+   false
+  ]
+ },
+ "A": {
+  "max_abs_diff": 0.0007604062557220459,
+  "mean_abs_diff": 6.597434506261379e-06,
+  "identical_images": 0,
+  "px": 8785920,
+  "px_flip_floor": 33,
+  "px_flip_mask": 52,
+  "points_1": 1000,
+  "points_2": 1001,
+  "points_same_set": 993,
+  "max_score_diff": 0.00038117170333862305,
+  "images_points_identical": 16,
+  "mask_threshold": 0.5
+ },
+ "B": {
+  "max_abs_diff": 0.0005622506141662598,
+  "mean_abs_diff": 5.376126514041364e-06,
+  "identical_images": 0,
+  "px": 8785920,
+  "px_flip_floor": 245,
+  "px_flip_mask": 35,
+  "points_1": 12429,
+  "points_2": 12428,
+  "points_same_set": 12411,
+  "max_score_diff": 0.00034265220165252686,
+  "images_points_identical": 14,
+  "mask_threshold": 0.3
+ },
+ "C2": {
+  "crops": 12429,
+  "max_abs_diff": 0.015869140625,
+  "px_flip_mask": 12997,
+  "assigned_differs": 0,
+  "max_a2_diff": 0.0004215836524963379,
+  "regions_differ": 4599,
+  "note": "probs stored as fp16; region/a2/assigned computed from fp32 maps"
+ }
+}
+2026-11-17T21:41:12Z ALL DONE

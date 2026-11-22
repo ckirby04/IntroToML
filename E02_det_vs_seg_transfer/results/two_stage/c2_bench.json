@@ -1,0 +1,57 @@
+{
+ "gpu": "NVIDIA GeForce RTX 5060 Ti",
+ "checkpoint_epoch": 39,
+ "checkpoint_sha256": "03de630e7094ac2cbb044a5636a35af47ac70d8d7a951a05c7dac360210e5bae",
+ "n_crops_total": 774,
+ "reference": {
+  "sec_per_crop": 0.12135752787192662,
+  "repeat_vs_itself": {
+   "max_abs_diff": 0.0,
+   "px_flip_0.05": 0,
+   "px_flip_0.5": 0,
+   "stage2_identical": 96,
+   "n": 96
+  }
+ },
+ "batched": {
+  "1": {
+   "sec_per_crop": 0.03775411151176275,
+   "speedup": 3.214418854331037,
+   "vs_reference": {
+    "max_abs_diff": 0.0,
+    "px_flip_0.05": 0,
+    "px_flip_0.5": 0,
+    "stage2_identical": 96,
+    "n": 96
+   },
+   "slow_path_crops": 0,
+   "peak_mem_gb": 4.771759104
+  },
+  "2": {
+   "sec_per_crop": 0.03774531066263677,
+   "speedup": 3.215168341217435,
+   "vs_reference": {
+    "max_abs_diff": 0.007463037967681885,
+    "px_flip_0.05": 20,
+    "px_flip_0.5": 18,
+    "stage2_identical": 67,
+    "n": 96
+   },
+   "slow_path_crops": 0,
+   "peak_mem_gb": 4.820820992
+  },
+  "4": {
+   "sec_per_crop": 0.037699702482198866,
+   "speedup": 3.219057973447655,
+   "vs_reference": {
+    "max_abs_diff": 0.008543252944946289,
+    "px_flip_0.05": 15,
+    "px_flip_0.5": 31,
+    "stage2_identical": 62,
+    "n": 96
+   },
+   "slow_path_crops": 0,
+   "peak_mem_gb": 5.01852672
+  }
+ }
+}

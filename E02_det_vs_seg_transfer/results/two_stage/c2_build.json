@@ -1,0 +1,13 @@
+{
+ "crops": 8980,
+ "by_kind": {
+  "pos": 7449,
+  "neg_rand": 1180,
+  "neg_bright_skipped": 1511,
+  "neg_rand_skipped": 682,
+  "neg_bright": 351
+ },
+ "positives_planned": 7449,
+ "negatives_planned": 3724,
+ "manifest_sha256": "fa31e498c7bf1a22d924c32f0ed5f03bf5b6e084067be1e1fa76d9e63d2c9419"
+}

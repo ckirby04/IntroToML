@@ -1,0 +1,66 @@
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+E01 arm B (E01HeatmapTrainer_smoke) on NVIDIA GeForce RTX 3070 Ti; seed 1600; resume=False at epoch 0; out G:\BrainMetShare\experiments\E01_det_vs_seg\data\nnUNet_results\Dataset901_E01T1c\E01HeatmapTrainer_smoke__nnUNetPlans__3d_fullres\fold_0
+2026-11-12 10:51:47.687158: do_dummy_2d_data_aug: False
+2026-11-12 10:51:47.692671: Using splits from existing split file: G:\BrainMetShare\experiments\E01_det_vs_seg\data\nnUNet_preprocessed\Dataset901_E01T1c\splits_final.json
+2026-11-12 10:51:47.696747: The split file contains 1 splits.
+2026-11-12 10:51:47.700437: Desired fold for training: 0
+2026-11-12 10:51:47.704552: This split has 357 training and 97 validation cases.
+using pin_memory on device 0
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+using pin_memory on device 0
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+
+This is the configuration used by this training:
+Configuration name: 3d_fullres
+ {'data_identifier': 'nnUNetPlans_3d_fullres', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [160, 128, 112], 'median_image_size_in_voxels': [172.0, 137.0, 137.0], 'spacing': [1.0000213384628296, 1.0, 1.0000213384628296], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [True], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 6, 'features_per_stage': [32, 64, 128, 256, 320, 320], 'conv_op': 'torch.nn.modules.conv.Conv3d', 'kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]], 'strides': [[1, 1, 1], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 1]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm3d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': False} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset901_E01T1c', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [1.0000213384628296, 1.0, 1.0000213384628296], 'original_median_shape_after_transp': [172, 137, 137], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [1, 0, 2], 'transpose_backward': [1, 0, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 11.764123916625977, 'mean': 1.5449607372283936, 'median': 1.3542710542678833, 'min': -8.308382034301758, 'percentile_00_5': -1.3407433032989502, 'percentile_99_5': 6.0364909172058105, 'std': 1.3492352962493896}}} 
+
+2026-11-12 10:52:04.863134: Unable to plot network architecture:
+2026-11-12 10:52:04.869059: No module named 'hiddenlayer'
+2026-11-12 10:52:04.932406: 
+2026-11-12 10:52:04.938476: Epoch 0
+2026-11-12 10:52:04.944091: Current learning rate: 0.01
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+2026-11-12 10:53:48.039937: train_loss 3.0773
+2026-11-12 10:53:48.050026: val_loss 2.4447
+2026-11-12 10:53:48.058980: Pseudo dice [np.float64(nan)]
+2026-11-12 10:53:48.067969: Epoch time: 103.11 s
+2026-11-12 10:53:48.076174: Yayy! New best EMA pseudo Dice: nan
+2026-11-12 10:53:49.408895: 
+2026-11-12 10:53:49.416488: Epoch 1
+2026-11-12 10:53:49.424447: Current learning rate: 0.00536
+2026-11-12 10:55:25.122722: train_loss 2.3019
+2026-11-12 10:55:25.132905: val_loss 2.1632
+2026-11-12 10:55:25.141978: Pseudo dice [np.float64(nan)]
+2026-11-12 10:55:25.150066: Epoch time: 95.71 s
+2026-11-12 10:55:26.477979: Training done.
+training done: G:\BrainMetShare\experiments\E01_det_vs_seg\data\nnUNet_results\Dataset901_E01T1c\E01HeatmapTrainer_smoke__nnUNetPlans__3d_fullres\fold_0\checkpoint_final.pth

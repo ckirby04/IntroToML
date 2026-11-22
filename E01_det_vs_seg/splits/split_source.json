@@ -1,0 +1,12 @@
+{
+ "manifest": "G:\\BrainMetShare\\1.60\\configs\\splits\\split_v1.json",
+ "manifest_sha256": "740ff72c2201a83f0a9e06902f0592feaabac230e526aa64a391df1587314f1c",
+ "e01_fold0": {
+  "train": "split_v1 pool folds 1-4",
+  "val_is_E01_test": "split_v1 pool fold 0"
+ },
+ "n_train_scans": 357,
+ "n_test_scans": 97,
+ "n_train_patients": 268,
+ "n_test_patients": 66
+}

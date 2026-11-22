@@ -1,0 +1,423 @@
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+E01 arm A (nnUNetTrainer_250epochs) on NVIDIA GeForce RTX 3070 Ti; seed 1600; out G:\BrainMetShare\experiments\E01_det_vs_seg\data\nnUNet_results\Dataset901_E01T1c\nnUNetTrainer_250epochs__nnUNetPlans__3d_fullres\fold_0
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+2026-11-09 16:46:20.706016: do_dummy_2d_data_aug: False
+2026-11-09 16:46:20.707558: Using splits from existing split file: G:\BrainMetShare\experiments\E01_det_vs_seg\data\nnUNet_preprocessed\Dataset901_E01T1c\splits_final.json
+2026-11-09 16:46:20.712155: The split file contains 1 splits.
+2026-11-09 16:46:20.716628: Desired fold for training: 0
+2026-11-09 16:46:20.720830: This split has 357 training and 97 validation cases.
+using pin_memory on device 0
+using pin_memory on device 0
+
+This is the configuration used by this training:
+Configuration name: 3d_fullres
+ {'data_identifier': 'nnUNetPlans_3d_fullres', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [160, 128, 112], 'median_image_size_in_voxels': [172.0, 137.0, 137.0], 'spacing': [1.0000213384628296, 1.0, 1.0000213384628296], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [True], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 6, 'features_per_stage': [32, 64, 128, 256, 320, 320], 'conv_op': 'torch.nn.modules.conv.Conv3d', 'kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]], 'strides': [[1, 1, 1], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 1]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm3d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': False} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset901_E01T1c', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [1.0000213384628296, 1.0, 1.0000213384628296], 'original_median_shape_after_transp': [172, 137, 137], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [1, 0, 2], 'transpose_backward': [1, 0, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 11.764123916625977, 'mean': 1.5449607372283936, 'median': 1.3542710542678833, 'min': -8.308382034301758, 'percentile_00_5': -1.3407433032989502, 'percentile_99_5': 6.0364909172058105, 'std': 1.3492352962493896}}} 
+
+2026-11-09 16:46:34.577335: Unable to plot network architecture:
+2026-11-09 16:46:34.583554: No module named 'hiddenlayer'
+2026-11-09 16:46:34.850248: 
+2026-11-09 16:46:34.855955: Epoch 0
+2026-11-09 16:46:34.862167: Current learning rate: 0.01
+2026-11-09 16:48:20.274886: train_loss -0.0872
+2026-11-09 16:48:20.286100: val_loss -0.2248
+2026-11-09 16:48:20.295363: Pseudo dice [np.float32(0.3915)]
+2026-11-09 16:48:20.304952: Epoch time: 105.43 s
+2026-11-09 16:48:20.314999: Yayy! New best EMA pseudo Dice: 0.39149999618530273
+2026-11-09 16:48:21.854096: 
+2026-11-09 16:48:21.861190: Epoch 1
+2026-11-09 16:48:21.869924: Current learning rate: 0.00996
+2026-11-09 16:50:03.519385: train_loss -0.3185
+2026-11-09 16:50:03.529323: val_loss -0.4427
+2026-11-09 16:50:03.539193: Pseudo dice [np.float32(0.6645)]
+2026-11-09 16:50:03.548768: Epoch time: 101.67 s
+2026-11-09 16:50:03.558696: Yayy! New best EMA pseudo Dice: 0.4187999963760376
+2026-11-09 16:50:04.732072: 
+2026-11-09 16:50:04.739560: Epoch 2
+2026-11-09 16:50:04.749911: Current learning rate: 0.00993
+2026-11-09 16:51:51.469589: train_loss -0.4052
+2026-11-09 16:51:51.479587: val_loss -0.4876
+2026-11-09 16:51:51.497345: Pseudo dice [np.float32(0.7267)]
+2026-11-09 16:51:51.511322: Epoch time: 106.74 s
+2026-11-09 16:51:51.521119: Yayy! New best EMA pseudo Dice: 0.4494999945163727
+2026-11-09 16:51:53.306884: 
+2026-11-09 16:51:53.314653: Epoch 3
+2026-11-09 16:51:53.323061: Current learning rate: 0.00989
+2026-11-09 16:53:48.902540: train_loss -0.4847
+2026-11-09 16:53:48.913459: val_loss -0.5093
+2026-11-09 16:53:49.030712: Pseudo dice [np.float32(0.7144)]
+2026-11-09 16:53:49.041714: Epoch time: 115.6 s
+2026-11-09 16:53:49.052591: Yayy! New best EMA pseudo Dice: 0.47600001096725464
+2026-11-09 16:53:51.963924: 
+2026-11-09 16:53:51.970091: Epoch 4
+2026-11-09 16:53:51.979060: Current learning rate: 0.00986
+2026-11-09 16:55:33.074073: train_loss -0.5191
+2026-11-09 16:55:33.085499: val_loss -0.5243
+2026-11-09 16:55:33.094917: Pseudo dice [np.float32(0.7496)]
+2026-11-09 16:55:33.105164: Epoch time: 101.11 s
+2026-11-09 16:55:33.114378: Yayy! New best EMA pseudo Dice: 0.5034000277519226
+2026-11-09 16:55:34.236629: 
+2026-11-09 16:55:34.244272: Epoch 5
+2026-11-09 16:55:34.251785: Current learning rate: 0.00982
+2026-11-09 16:57:11.698031: train_loss -0.545
+2026-11-09 16:57:11.709321: val_loss -0.516
+2026-11-09 16:57:11.719154: Pseudo dice [np.float32(0.6889)]
+2026-11-09 16:57:11.729836: Epoch time: 97.46 s
+2026-11-09 16:57:11.738284: Yayy! New best EMA pseudo Dice: 0.5218999981880188
+2026-11-09 16:57:13.022121: 
+2026-11-09 16:57:13.031330: Epoch 6
+2026-11-09 16:57:13.039379: Current learning rate: 0.00978
+2026-11-09 16:58:48.503960: train_loss -0.5726
+2026-11-09 16:58:48.512162: val_loss -0.5728
+2026-11-09 16:58:48.522207: Pseudo dice [np.float32(0.8034)]
+2026-11-09 16:58:48.530996: Epoch time: 95.48 s
+2026-11-09 16:58:48.540812: Yayy! New best EMA pseudo Dice: 0.5501000285148621
+2026-11-09 16:58:50.494713: 
+2026-11-09 16:58:50.557262: Epoch 7
+2026-11-09 16:58:50.565496: Current learning rate: 0.00975
+2026-11-09 17:00:24.557456: train_loss -0.5879
+2026-11-09 17:00:24.567443: val_loss -0.5779
+2026-11-09 17:00:24.579772: Pseudo dice [np.float32(0.7793)]
+2026-11-09 17:00:24.589153: Epoch time: 94.06 s
+2026-11-09 17:00:24.598933: Yayy! New best EMA pseudo Dice: 0.5730000138282776
+2026-11-09 17:00:25.707379: 
+2026-11-09 17:00:25.716007: Epoch 8
+2026-11-09 17:00:25.723732: Current learning rate: 0.00971
+2026-11-09 17:01:59.247009: train_loss -0.5788
+2026-11-09 17:01:59.256724: val_loss -0.5493
+2026-11-09 17:01:59.265811: Pseudo dice [np.float32(0.7918)]
+2026-11-09 17:01:59.277208: Epoch time: 93.54 s
+2026-11-09 17:01:59.286208: Yayy! New best EMA pseudo Dice: 0.5949000120162964
+2026-11-09 17:02:00.462756: 
+2026-11-09 17:02:00.470425: Epoch 9
+2026-11-09 17:02:00.478199: Current learning rate: 0.00968
+2026-11-09 17:03:36.375600: train_loss -0.6236
+2026-11-09 17:03:36.384315: val_loss -0.6049
+2026-11-09 17:03:36.395959: Pseudo dice [np.float32(0.8126)]
+2026-11-09 17:03:36.406065: Epoch time: 95.91 s
+2026-11-09 17:03:37.040286: Yayy! New best EMA pseudo Dice: 0.6166999936103821
+2026-11-09 17:03:38.046846: 
+2026-11-09 17:03:38.055388: Epoch 10
+2026-11-09 17:03:38.063279: Current learning rate: 0.00964
+2026-11-09 17:05:10.331439: train_loss -0.6296
+2026-11-09 17:05:10.341304: val_loss -0.587
+2026-11-09 17:05:10.350776: Pseudo dice [np.float32(0.7152)]
+2026-11-09 17:05:10.360087: Epoch time: 92.29 s
+2026-11-09 17:05:10.371464: Yayy! New best EMA pseudo Dice: 0.6265000104904175
+2026-11-09 17:05:11.618071: 
+2026-11-09 17:05:11.623718: Epoch 11
+2026-11-09 17:05:11.633204: Current learning rate: 0.0096
+2026-11-09 17:06:45.202560: train_loss -0.6076
+2026-11-09 17:06:45.211991: val_loss -0.5757
+2026-11-09 17:06:45.222512: Pseudo dice [np.float32(0.7991)]
+2026-11-09 17:06:45.232311: Epoch time: 93.59 s
+2026-11-09 17:06:45.241109: Yayy! New best EMA pseudo Dice: 0.6438000202178955
+2026-11-09 17:06:46.544100: 
+2026-11-09 17:06:46.551849: Epoch 12
+2026-11-09 17:06:46.559367: Current learning rate: 0.00957
+2026-11-09 17:08:18.698101: train_loss -0.6466
+2026-11-09 17:08:18.705411: val_loss -0.5737
+2026-11-09 17:08:18.717230: Pseudo dice [np.float32(0.7906)]
+2026-11-09 17:08:18.727330: Epoch time: 92.15 s
+2026-11-09 17:08:18.737434: Yayy! New best EMA pseudo Dice: 0.6585000157356262
+2026-11-09 17:08:19.971974: 
+2026-11-09 17:08:19.979817: Epoch 13
+2026-11-09 17:08:19.989528: Current learning rate: 0.00953
+2026-11-09 17:09:53.927516: train_loss -0.6326
+2026-11-09 17:09:53.938386: val_loss -0.6448
+2026-11-09 17:09:53.946982: Pseudo dice [np.float32(0.8311)]
+2026-11-09 17:09:53.956107: Epoch time: 93.96 s
+2026-11-09 17:09:53.964546: Yayy! New best EMA pseudo Dice: 0.6757000088691711
+2026-11-09 17:09:55.131172: 
+2026-11-09 17:09:55.140012: Epoch 14
+2026-11-09 17:09:55.149041: Current learning rate: 0.00949
+2026-11-09 17:11:34.601010: train_loss -0.6552
+2026-11-09 17:11:34.617707: val_loss -0.5966
+2026-11-09 17:11:34.659199: Pseudo dice [np.float32(0.7948)]
+2026-11-09 17:11:34.787132: Epoch time: 99.47 s
+2026-11-09 17:11:34.890886: Yayy! New best EMA pseudo Dice: 0.6876000165939331
+2026-11-09 17:11:35.911854: 
+2026-11-09 17:11:35.917359: Epoch 15
+2026-11-09 17:11:35.923076: Current learning rate: 0.00946
+2026-11-09 17:13:06.933655: train_loss -0.6282
+2026-11-09 17:13:06.943345: val_loss -0.5999
+2026-11-09 17:13:06.952066: Pseudo dice [np.float32(0.7651)]
+2026-11-09 17:13:06.960755: Epoch time: 91.02 s
+2026-11-09 17:13:06.970389: Yayy! New best EMA pseudo Dice: 0.6953999996185303
+2026-11-09 17:13:08.053866: 
+2026-11-09 17:13:08.060062: Epoch 16
+2026-11-09 17:13:08.065476: Current learning rate: 0.00942
+2026-11-09 17:14:38.590589: train_loss -0.6529
+2026-11-09 17:14:38.600451: val_loss -0.648
+2026-11-09 17:14:38.609836: Pseudo dice [np.float32(0.8162)]
+2026-11-09 17:14:38.618036: Epoch time: 90.54 s
+2026-11-09 17:14:38.636785: Yayy! New best EMA pseudo Dice: 0.7074999809265137
+2026-11-09 17:14:39.721542: 
+2026-11-09 17:14:39.728652: Epoch 17
+2026-11-09 17:14:39.733947: Current learning rate: 0.00939
+2026-11-09 17:16:11.720669: train_loss -0.6736
+2026-11-09 17:16:11.730949: val_loss -0.5934
+2026-11-09 17:16:11.740880: Pseudo dice [np.float32(0.7881)]
+2026-11-09 17:16:11.749989: Epoch time: 92.0 s
+2026-11-09 17:16:11.759083: Yayy! New best EMA pseudo Dice: 0.715499997138977
+2026-11-09 17:16:13.022305: 
+2026-11-09 17:16:13.032462: Epoch 18
+2026-11-09 17:16:13.040044: Current learning rate: 0.00935
+2026-11-09 17:17:43.551379: train_loss -0.6564
+2026-11-09 17:17:43.561382: val_loss -0.6727
+2026-11-09 17:17:43.569774: Pseudo dice [np.float32(0.8156)]
+2026-11-09 17:17:43.579099: Epoch time: 90.53 s
+2026-11-09 17:17:43.587861: Yayy! New best EMA pseudo Dice: 0.7254999876022339
+2026-11-09 17:17:44.663090: 
+2026-11-09 17:17:44.668601: Epoch 19
+2026-11-09 17:17:44.676174: Current learning rate: 0.00931
+2026-11-09 17:19:14.906994: train_loss -0.6716
+2026-11-09 17:19:14.916718: val_loss -0.6874
+2026-11-09 17:19:14.924530: Pseudo dice [np.float32(0.8245)]
+2026-11-09 17:19:14.934231: Epoch time: 90.24 s
+2026-11-09 17:19:15.495692: Yayy! New best EMA pseudo Dice: 0.7354000210762024
+2026-11-09 17:19:16.364679: 
+2026-11-09 17:19:16.370312: Epoch 20
+2026-11-09 17:19:16.376564: Current learning rate: 0.00928
+2026-11-09 17:20:46.832044: train_loss -0.6886
+2026-11-09 17:20:46.844002: val_loss -0.6421
+2026-11-09 17:20:46.853948: Pseudo dice [np.float32(0.8402)]
+2026-11-09 17:20:46.862661: Epoch time: 90.47 s
+2026-11-09 17:20:46.873302: Yayy! New best EMA pseudo Dice: 0.7458999752998352
+2026-11-09 17:20:48.125234: 
+2026-11-09 17:20:48.133714: Epoch 21
+2026-11-09 17:20:48.141402: Current learning rate: 0.00924
+2026-11-09 17:22:19.184835: train_loss -0.66
+2026-11-09 17:22:19.195359: val_loss -0.6509
+2026-11-09 17:22:19.204524: Pseudo dice [np.float32(0.8222)]
+2026-11-09 17:22:19.214443: Epoch time: 91.06 s
+2026-11-09 17:22:19.222844: Yayy! New best EMA pseudo Dice: 0.7534999847412109
+2026-11-09 17:22:20.284552: 
+2026-11-09 17:22:20.289476: Epoch 22
+2026-11-09 17:22:20.294893: Current learning rate: 0.0092
+2026-11-09 17:23:50.961665: train_loss -0.6646
+2026-11-09 17:23:50.977171: val_loss -0.6424
+2026-11-09 17:23:50.985496: Pseudo dice [np.float32(0.829)]
+2026-11-09 17:23:50.994925: Epoch time: 90.68 s
+2026-11-09 17:23:51.002946: Yayy! New best EMA pseudo Dice: 0.7610999941825867
+2026-11-09 17:23:52.094721: 
+2026-11-09 17:23:52.105326: Epoch 23
+2026-11-09 17:23:52.115886: Current learning rate: 0.00917
+2026-11-09 17:25:22.455315: train_loss -0.6808
+2026-11-09 17:25:22.464555: val_loss -0.6
+2026-11-09 17:25:22.474345: Pseudo dice [np.float32(0.7955)]
+2026-11-09 17:25:22.482933: Epoch time: 90.36 s
+2026-11-09 17:25:22.492257: Yayy! New best EMA pseudo Dice: 0.7645000219345093
+2026-11-09 17:25:23.579400: 
+2026-11-09 17:25:23.585124: Epoch 24
+2026-11-09 17:25:23.590003: Current learning rate: 0.00913
+2026-11-09 17:26:54.252669: train_loss -0.6952
+2026-11-09 17:26:54.262385: val_loss -0.6282
+2026-11-09 17:26:54.272436: Pseudo dice [np.float32(0.8111)]
+2026-11-09 17:26:54.282148: Epoch time: 90.67 s
+2026-11-09 17:26:54.291643: Yayy! New best EMA pseudo Dice: 0.7692000269889832
+2026-11-09 17:26:55.307168: 
+2026-11-09 17:26:55.313267: Epoch 25
+2026-11-09 17:26:55.319394: Current learning rate: 0.0091
+2026-11-09 17:28:25.735011: train_loss -0.6783
+2026-11-09 17:28:25.744750: val_loss -0.6674
+2026-11-09 17:28:25.755470: Pseudo dice [np.float32(0.8407)]
+2026-11-09 17:28:25.764287: Epoch time: 90.43 s
+2026-11-09 17:28:25.773333: Yayy! New best EMA pseudo Dice: 0.7763000130653381
+2026-11-09 17:28:26.871203: 
+2026-11-09 17:28:26.877587: Epoch 26
+2026-11-09 17:28:26.886364: Current learning rate: 0.00906
+2026-11-09 17:29:57.370383: train_loss -0.6826
+2026-11-09 17:29:57.370813: val_loss -0.6375
+2026-11-09 17:29:57.380690: Pseudo dice [np.float32(0.8394)]
+2026-11-09 17:29:57.389351: Epoch time: 90.5 s
+2026-11-09 17:29:57.397636: Yayy! New best EMA pseudo Dice: 0.7825999855995178
+2026-11-09 17:29:58.456084: 
+2026-11-09 17:29:58.460790: Epoch 27
+2026-11-09 17:29:58.465703: Current learning rate: 0.00902
+2026-11-09 17:31:29.176179: train_loss -0.6751
+2026-11-09 17:31:29.184628: val_loss -0.6645
+2026-11-09 17:31:29.193556: Pseudo dice [np.float32(0.8278)]
+2026-11-09 17:31:29.201050: Epoch time: 90.72 s
+2026-11-09 17:31:29.209665: Yayy! New best EMA pseudo Dice: 0.7871999740600586
+2026-11-09 17:31:30.311213: 
+2026-11-09 17:31:30.319323: Epoch 28
+2026-11-09 17:31:30.326099: Current learning rate: 0.00899
+2026-11-09 17:33:00.581218: train_loss -0.6974
+2026-11-09 17:33:00.581647: val_loss -0.6226
+2026-11-09 17:33:00.593551: Pseudo dice [np.float32(0.8182)]
+2026-11-09 17:33:00.600214: Epoch time: 90.27 s
+2026-11-09 17:33:00.610081: Yayy! New best EMA pseudo Dice: 0.7903000116348267
+2026-11-09 17:33:01.640118: 
+2026-11-09 17:33:01.645553: Epoch 29
+2026-11-09 17:33:01.651139: Current learning rate: 0.00895
+2026-11-09 17:34:31.609322: train_loss -0.6969
+2026-11-09 17:34:31.619065: val_loss -0.6606
+2026-11-09 17:34:31.628209: Pseudo dice [np.float32(0.8232)]
+2026-11-09 17:34:31.638491: Epoch time: 89.97 s
+2026-11-09 17:34:32.142305: Yayy! New best EMA pseudo Dice: 0.7936000227928162
+2026-11-09 17:34:32.819832: 
+2026-11-09 17:34:32.829251: Epoch 30
+2026-11-09 17:34:32.838301: Current learning rate: 0.00891
+2026-11-09 17:36:02.877810: train_loss -0.6819
+2026-11-09 17:36:02.887782: val_loss -0.6609
+2026-11-09 17:36:02.895652: Pseudo dice [np.float32(0.8103)]
+2026-11-09 17:36:02.922126: Epoch time: 90.06 s
+2026-11-09 17:36:02.986033: Yayy! New best EMA pseudo Dice: 0.795199990272522
+2026-11-09 17:36:04.023187: 
+2026-11-09 17:36:04.030514: Epoch 31
+2026-11-09 17:36:04.036973: Current learning rate: 0.00888
+2026-11-09 17:37:34.184848: train_loss -0.7069
+2026-11-09 17:37:34.195333: val_loss -0.6463
+2026-11-09 17:37:34.203752: Pseudo dice [np.float32(0.8126)]
+2026-11-09 17:37:34.213552: Epoch time: 90.16 s
+2026-11-09 17:37:34.221790: Yayy! New best EMA pseudo Dice: 0.796999990940094
+2026-11-09 17:37:35.184821: 
+2026-11-09 17:37:35.192964: Epoch 32
+2026-11-09 17:37:35.199965: Current learning rate: 0.00884
+2026-11-09 17:39:05.230167:Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\nondet_multi_threaded_augmenter.py", line 53, in producer
+    item = next(data_loader)
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\data_loader.py", line 126, in __next__
+    return self.generate_train_batch()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\nnunetv2\training\dataloading\data_loader.py", line 171, in generate_train_batch
+    seg_all = np.zeros(self.seg_shape, dtype=np.int16)
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 37.0 MiB for an array with shape (2, 1, 238, 196, 208) and data type int16
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\nondet_multi_threaded_augmenter.py", line 53, in producer
+    item = next(data_loader)
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\data_loader.py", line 126, in __next__
+    return self.generate_train_batch()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\nnunetv2\training\dataloading\data_loader.py", line 170, in generate_train_batch
+    data_all = np.zeros(self.data_shape, dtype=np.float32)
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 74.0 MiB for an array with shape (2, 1, 238, 196, 208) and data type float32
+Traceback (most recent call last):
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\nondet_multi_threaded_augmenter.py", line 53, in producer
+    item = next(data_loader)
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\data_loader.py", line 126, in __next__
+    return self.generate_train_batch()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\nnunetv2\training\dataloading\data_loader.py", line 188, in generate_train_batch
+    data_all[j] = crop_and_pad_nd(data, bbox, 0)
+                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\acvl_utils\cropping_and_padding\bounding_boxes.py", line 280, in crop_and_pad_nd
+    cropped = image[tuple(slices)]
+              ~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\blosc2\ndarray.py", line 4201, in __getitem__
+    nparr = super().get_slice_numpy(nparr, (start, stop))
+  File "blosc2/blosc2_ext.pyx", line 2732, in blosc2.blosc2_ext.NDArray.get_slice_numpy
+  File "blosc2/blosc2_ext.pyx", line 2549, in blosc2.blosc2_ext._check_rc
+    raise RuntimeError(message)
+RuntimeError: Error while getting the buffer
+Exception in background worker 3:
+ Unable to allocate 37.0 MiB for an array with shape (2, 1, 238, 196, 208) and data type int16
+Exception in background worker 8:
+ Unable to allocate 74.0 MiB for an array with shape (2, 1, 238, 196, 208) and data type float32
+Traceback (most recent call last):
+Exception in background worker 5:
+ Error while getting the buffer
+  File "C:\Python313\Lib\multiprocessing\queues.py", line 262, in _feed
+    obj = _ForkingPickler.dumps(obj)
+  File "C:\Python313\Lib\multiprocessing\reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\torch\multiprocessing\reductions.py", line 604, in reduce_storage
+    metadata = storage._share_filename_cpu_()
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\torch\storage.py", line 449, in wrapper
+    return fn(self, *args, **kwargs)
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\torch\storage.py", line 528, in _share_filename_cpu_
+    return super()._share_filename_cpu_(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+RuntimeError: Couldn't open shared file mapping: <torch_5788_2186733471_4314>, error code: <1455>
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "G:\BrainMetShare\experiments\E01_det_vs_seg\code\e01\launch_train.py", line 75, in <module>
+  File "G:\BrainMetShare\experiments\E01_det_vs_seg\code\e01\launch_train.py", line 68, in main
+    "splits_sha256": c.sha256(pre / "splits_final.json"),
+    ^^^^^
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\nnunetv2\training\nnUNetTrainer\nnUNetTrainer.py", line 1375, in run_training
+    train_outputs.append(self.train_step(next(self.dataloader_train)))
+                                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\nondet_multi_threaded_augmenter.py", line 196, in __next__
+    item = self.__get_next_item()
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\nondet_multi_threaded_augmenter.py", line 181, in __get_next_item
+    raise RuntimeError("One or more background workers are no longer alive. Exiting. Please check the "
+                       "print statements above for the actual error message")
+RuntimeError: One or more background workers are no longer alive. Exiting. Please check the print statements above for the actual error message
+Exception in thread Thread-4 (results_loop):
+Traceback (most recent call last):
+  File "C:\Python313\Lib\threading.py", line 1044, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Python313\Lib\threading.py", line 995, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\nondet_multi_threaded_augmenter.py", line 125, in results_loop
+    raise e
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\nondet_multi_threaded_augmenter.py", line 103, in results_loop
+    raise RuntimeError("One or more background workers are no longer alive. Exiting. Please check the "
+                       "print statements above for the actual error message")
+RuntimeError: One or more background workers are no longer alive. Exiting. Please check the print statements above for the actual error message
+ train_loss -0.7081
+2026-11-09 17:39:05.242145: val_loss -0.6909
+2026-11-09 17:39:05.249926: Pseudo dice [np.float32(0.8349)]
+2026-11-09 17:39:05.258743: Epoch time: 90.05 s
+2026-11-09 17:39:05.266968: Yayy! New best EMA pseudo Dice: 0.8008000254631042
+2026-11-09 17:39:06.300444: 
+2026-11-09 17:39:06.305586: Epoch 33
+2026-11-09 17:39:06.310671: Current learning rate: 0.0088
+2026-11-09 17:40:43.987213: train_loss -0.6971
+2026-11-09 17:40:43.996980: val_loss -0.67
+2026-11-09 17:40:44.006919: Pseudo dice [np.float32(0.8415)]
+2026-11-09 17:40:44.016343: Epoch time: 97.69 s
+2026-11-09 17:40:44.025195: Yayy! New best EMA pseudo Dice: 0.8047999739646912
+2026-11-09 17:40:45.367037: 
+2026-11-09 17:40:45.379082: Epoch 34
+2026-11-09 17:40:45.388440: Current learning rate: 0.00877
+Exception ignored in: <function NonDetMultiThreadedAugmenter.__del__ at 0x0000029B837431A0>
+Traceback (most recent call last):
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\nondet_multi_threaded_augmenter.py", line 259, in __del__
+    self._finish()
+  File "C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\dataloading\nondet_multi_threaded_augmenter.py", line 244, in _finish
+    self.abort_event.set()
+  File "C:\Python313\Lib\multiprocessing\synchronize.py", line 345, in set
+    self._cond.notify_all()
+  File "C:\Python313\Lib\multiprocessing\synchronize.py", line 304, in notify_all
+    self.notify(n=sys.maxsize)
+  File "C:\Python313\Lib\multiprocessing\synchronize.py", line 279, in notify
+    assert not self._wait_semaphore.acquire(
+OSError: [WinError 6] The handle is invalid

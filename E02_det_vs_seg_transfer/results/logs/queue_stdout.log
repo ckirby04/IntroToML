@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 194, in _run_module_as_main
+  File "<frozen runpy>", line 164, in _get_module_details
+  File "<frozen importlib._bootstrap_external>", line 1157, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1087, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "G:\BrainMetShare\experiments\E02_det_vs_seg_transfer\code\e02\jobqueue.py", line 1
+    """Sequential E02 training queue on ONE GPU: never two nnU-Net runs at once (PREREG \ufffd4; E01 D3).
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xa7 in position 0: invalid start byte
+{"utc": "2026-11-17T03:16:30Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"]]}
+{"utc": "2026-11-17T03:16:30Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\logs\\A_train_20261116_211630.log"}
+{"utc": "2026-11-17T09:06:03Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-17T09:06:03Z", "event": "job_start", "job": ["--arm", "B", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\logs\\B_train_20261117_030603.log"}
+{"utc": "2026-11-17T15:37:07Z", "event": "job_end", "job": ["--arm", "B", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-17T15:37:07Z", "event": "queue_done"}
+{"utc": "2026-11-17T15:58:40Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"], ["--arm", "C2", "--gpu", "3070ti"]]}
+{"utc": "2026-11-17T15:58:40Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\logs\\A_train_20261117_095840.log"}
+{"utc": "2026-11-17T15:58:49Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-17T15:58:49Z", "event": "job_start", "job": ["--arm", "B", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\logs\\B_train_20261117_095849.log"}
+{"utc": "2026-11-17T15:58:55Z", "event": "job_end", "job": ["--arm", "B", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-17T15:58:55Z", "event": "job_start", "job": ["--arm", "C2", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\logs\\C2_train_20261117_095855.log"}
+{"utc": "2026-11-17T21:26:28Z", "event": "job_end", "job": ["--arm", "C2", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-17T21:26:28Z", "event": "queue_done"}
+{"utc": "2026-11-18T04:28:58Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"], ["--arm", "C2", "--gpu", "3070ti"]], "eval": true}
+{"utc": "2026-11-18T04:28:58Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\logs\\A_train_20261117_222858.log"}
+{"utc": "2026-11-18T04:29:29Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-18T04:29:29Z", "event": "job_start", "job": ["--arm", "B", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\logs\\B_train_20261117_222929.log"}
+{"utc": "2026-11-18T04:29:36Z", "event": "job_end", "job": ["--arm", "B", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-18T04:29:36Z", "event": "job_start", "job": ["--arm", "C2", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\logs\\C2_train_20261117_222936.log"}
+{"utc": "2026-11-18T04:29:42Z", "event": "job_end", "job": ["--arm", "C2", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-18T04:29:42Z", "event": "job_start", "job": ["--cases", "test", "--gpus", "3070ti,5060ti"], "stdout": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\logs\\eval_20261117_222942.log"}
+{"utc": "2026-11-18T09:52:57Z", "event": "job_end", "job": ["--cases", "test", "--gpus", "3070ti,5060ti"], "exit": 0}
+{"utc": "2026-11-18T09:52:57Z", "event": "queue_done"}

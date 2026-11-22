@@ -1,0 +1,29 @@
+...............................                                          [100%]
+============================== warnings summary ===============================
+code/tests/test_loss.py::test_toy_overfit_loss_decreases_on_real_backbone
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+code/tests/test_loss.py::test_toy_overfit_loss_decreases_on_real_backbone
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+code/tests/test_loss.py::test_toy_overfit_loss_decreases_on_real_backbone
+  <frozen importlib._bootstrap>:488: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+code/tests/test_loss.py::test_toy_overfit_loss_decreases_on_real_backbone
+  C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\augmentations\utils.py:20: DeprecationWarning: Please import `gaussian_filter` from the `scipy.ndimage` namespace; the `scipy.ndimage.filters` namespace is deprecated and will be removed in SciPy 2.0.0.
+    from scipy.ndimage.filters import gaussian_filter, gaussian_gradient_magnitude
+
+code/tests/test_loss.py::test_toy_overfit_loss_decreases_on_real_backbone
+  C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\augmentations\utils.py:20: DeprecationWarning: Please import `gaussian_gradient_magnitude` from the `scipy.ndimage` namespace; the `scipy.ndimage.filters` namespace is deprecated and will be removed in SciPy 2.0.0.
+    from scipy.ndimage.filters import gaussian_filter, gaussian_gradient_magnitude
+
+code/tests/test_loss.py::test_toy_overfit_loss_decreases_on_real_backbone
+  C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\augmentations\utils.py:21: DeprecationWarning: Please import `grey_dilation` from the `scipy.ndimage` namespace; the `scipy.ndimage.morphology` namespace is deprecated and will be removed in SciPy 2.0.0.
+    from scipy.ndimage.morphology import grey_dilation
+
+code/tests/test_loss.py::test_toy_overfit_loss_decreases_on_real_backbone
+  C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\batchgenerators\augmentations\utils.py:23: DeprecationWarning: Please import `label` from the `scipy.ndimage` namespace; the `scipy.ndimage.measurements` namespace is deprecated and will be removed in SciPy 2.0.0.
+    from scipy.ndimage.measurements import label as lb
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+31 passed, 7 warnings in 15.85s

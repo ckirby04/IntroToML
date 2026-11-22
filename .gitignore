@@ -1,0 +1,20 @@
+# Datasets (raw/preprocessed MRI, nnU-Net folders) - too large for GitHub
+**/data/
+
+# Model predictions / intermediate arrays
+*.npz
+*.npy
+*.pkl
+*.nii
+*.nii.gz
+*.gz
+*.pth
+*.pt
+*.ckpt
+*.pid
+
+# Python / tooling caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/

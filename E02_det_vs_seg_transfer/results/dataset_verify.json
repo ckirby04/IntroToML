@@ -1,0 +1,38 @@
+{
+ "Tr": {
+  "images": 3727,
+  "wells": 22,
+  "fovs": 44,
+  "n_polygons": 1194182,
+  "n_instances": 1194095,
+  "n_lost": 87,
+  "overlap_px": 21461138,
+  "n_empty_after_gap": 0,
+  "n_fragmented": 47168,
+  "n_cc_multi_instance": 0
+ },
+ "Ts": {
+  "images": 1460,
+  "wells": 9,
+  "fovs": 18,
+  "n_polygons": 444634,
+  "n_instances": 444600,
+  "n_lost": 34,
+  "overlap_px": 8285546,
+  "n_empty_after_gap": 2,
+  "n_fragmented": 21935,
+  "n_cc_multi_instance": 0
+ },
+ "shared_wells": 0,
+ "test_wells_by_line": {
+  "A172_C7": 152,
+  "BT474_D3": 168,
+  "BV2_A4": 152,
+  "Huh7_A12": 184,
+  "MCF7_H4": 184,
+  "SHSY5Y_A10": 176,
+  "SKOV3_E4": 132,
+  "SKOV3_F4": 136,
+  "SkBr3_G3": 176
+ }
+}

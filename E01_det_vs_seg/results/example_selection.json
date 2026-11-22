@@ -1,0 +1,17 @@
+{
+ "rule": "PREREG \u00a79, GT only, chosen before predictions are loaded; ties -> case id order",
+ "most_lesions_lt3mm": {
+  "case": "UCSF_100286A",
+  "n_lt3mm": 34
+ },
+ "median_lesion_count": {
+  "case": "UCSF_100247B",
+  "n_lesions": 4,
+  "how": "sorted by (count, id), index (n-1)//2"
+ },
+ "largest_single_lesion": {
+  "case": "UCSF_100285A",
+  "n_vox": 32634
+ },
+ "utc": "2026-11-13T19:35:31Z"
+}

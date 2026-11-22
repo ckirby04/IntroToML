@@ -1,0 +1,20 @@
+{
+ "fold0_test": {
+  "lesions": 866,
+  "centroid_gt_2mm_outside": 17,
+  "lesions_per_bin_1mm_grid": {
+   "<3": 225,
+   "3-10": 549,
+   ">10": 92
+  }
+ },
+ "folds1-4_train": {
+  "lesions": 3825,
+  "centroid_gt_2mm_outside": 72,
+  "lesions_per_bin_1mm_grid": {
+   "<3": 974,
+   "3-10": 2367,
+   ">10": 484
+  }
+ }
+}

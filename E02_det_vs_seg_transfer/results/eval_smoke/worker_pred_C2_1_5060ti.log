@@ -1,0 +1,1 @@
+{"utc": "2026-11-17T17:03:30Z", "event": "worker_done", "stage": "pred_C2", "gpu": "5060ti", "done_by_worker": 1, "slow_path_crops": 0}

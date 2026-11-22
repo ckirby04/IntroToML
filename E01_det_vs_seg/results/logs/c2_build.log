@@ -1,0 +1,29 @@
+357 scans, 3825 lesions, negatives [956, 956] (3s)
+  1/357 scans, 4 rows, 5s
+  26/357 scans, 583 rows, 24s
+  51/357 scans, 1019 rows, 24s
+  76/357 scans, 1535 rows, 28s
+  101/357 scans, 1932 rows, 37s
+  126/357 scans, 2285 rows, 39s
+  151/357 scans, 2636 rows, 45s
+  176/357 scans, 2927 rows, 49s
+  201/357 scans, 3373 rows, 58s
+  226/357 scans, 3967 rows, 65s
+  251/357 scans, 4552 rows, 78s
+  276/357 scans, 4840 rows, 78s
+  301/357 scans, 5154 rows, 81s
+  326/357 scans, 5517 rows, 89s
+  351/357 scans, 5681 rows, 91s
+{
+ "scans": 357,
+ "lesions": 3825,
+ "crops": 5737,
+ "by_kind": {
+  "neg_bright": 956,
+  "neg_rand": 956,
+  "pos": 3825
+ },
+ "negatives_with_lesion_voxels": 1785,
+ "seconds": 90.6,
+ "utc": "2026-11-13T22:55:57Z"
+}

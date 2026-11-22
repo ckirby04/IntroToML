@@ -1,0 +1,17 @@
+{
+    "channel_names": {
+        "0": "t1c"
+    },
+    "labels": {
+        "background": 0,
+        "metastasis": 1
+    },
+    "numTraining": 454,
+    "file_ending": ".nii.gz",
+    "e01": {
+        "source": "G:\\BrainMetShare\\1.60_artifacts\\nnUNet_raw\\Dataset170_JannusT1c",
+        "source_dataset_json_sha256": "1efd5757f72b4e39965edfcaa4357afb676f22788e7811d144b8aac050fe462a",
+        "split_manifest_sha256": "740ff72c2201a83f0a9e06902f0592feaabac230e526aa64a391df1587314f1c",
+        "files": "hard links"
+    }
+}

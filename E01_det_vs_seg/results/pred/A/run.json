@@ -1,0 +1,23 @@
+{
+ "arm": "A",
+ "trainer": "nnUNetTrainer_250epochs",
+ "checkpoint": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\data\\nnUNet_results\\Dataset901_E01T1c\\nnUNetTrainer_250epochs__nnUNetPlans__3d_fullres\\fold_0\\checkpoint_final.pth",
+ "checkpoint_sha256": "fe0ac778857011f3795b883bc60334defded04020523691c111d99751ad0121f",
+ "epoch": 250,
+ "mirror_axes": [
+  0,
+  1,
+  2
+ ],
+ "tile_step_size": 0.5,
+ "use_gaussian": true,
+ "use_mirroring": true,
+ "precision": "fp32",
+ "b_wrapper": null,
+ "cases": "test",
+ "n_cases": 97,
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "seconds": 583.6,
+ "utc": "2026-11-13T19:21:24Z",
+ "missing": []
+}

@@ -1,0 +1,25 @@
+{
+ "arm": "C2",
+ "trainer": "E01C2_smoke",
+ "checkpoint": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\data\\nnUNet_results\\Dataset902_E01C2Crops\\E01C2_smoke__nnUNetPlans__3d_fullres\\fold_all\\checkpoint_final.pth",
+ "checkpoint_sha256": "380a34199ec9c17e19eab41b34abbc04d126cfcb6bcbae7fce523fe9d1bbf4d3",
+ "epoch": 2,
+ "mirror_axes": [
+  0,
+  1,
+  2
+ ],
+ "tile_step_size": 0.5,
+ "use_gaussian": true,
+ "use_mirroring": true,
+ "precision": "fp32",
+ "b_wrapper": null,
+ "cases": "smoke",
+ "n_cases": 2,
+ "peaks_this_run": 35,
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "crop": 96,
+ "seconds": 18.6,
+ "missing": [],
+ "utc": "2026-11-14T20:21:07Z"
+}

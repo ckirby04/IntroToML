@@ -1,0 +1,10 @@
+{"utc": "2026-11-17T17:01:23Z", "event": "worker_paused", "stage": "pred_A", "gpu": "5060ti", "done_by_worker": 0}
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+There are 1 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 1 cases that I would like to predict
+perform_everything_on_device: True
+{"utc": "2026-11-17T17:02:07Z", "event": "worker_done", "stage": "pred_A", "gpu": "5060ti", "done_by_worker": 2, "slow_path_crops": null}

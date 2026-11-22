@@ -1,0 +1,16 @@
+{
+ "arm": "A",
+ "trainer": "E02SegTrainer",
+ "checkpoint": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\data\\nnUNet_results\\Dataset921_E02LiveCell\\E02SegTrainer__nnUNetPlans__2d\\fold_all\\checkpoint_final.pth",
+ "checkpoint_sha256": "4996310d98f11ea856cc6f5d941e909e993b4d5c9b1b8c5ba49c1b5060cffd21",
+ "epoch": 250,
+ "mirror_axes": [
+  0,
+  1
+ ],
+ "tile_step_size": 0.5,
+ "use_gaussian": true,
+ "use_mirroring": true,
+ "precision": "fp32",
+ "b_wrapper": null
+}

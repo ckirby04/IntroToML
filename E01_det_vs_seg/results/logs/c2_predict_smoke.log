@@ -1,0 +1,26 @@
+BMS_Mets_013: 3 peaks, 1 assigned, 4s
+BMS_Mets_019: 32 peaks, 10 assigned, 19s
+{
+ "arm": "C2",
+ "trainer": "E01C2_smoke",
+ "checkpoint_sha256": "380a34199ec9c17e19eab41b34abbc04d126cfcb6bcbae7fce523fe9d1bbf4d3",
+ "epoch": 2,
+ "mirror_axes": [
+  0,
+  1,
+  2
+ ],
+ "tile_step_size": 0.5,
+ "use_gaussian": true,
+ "use_mirroring": true,
+ "precision": "fp32",
+ "b_wrapper": null,
+ "cases": "smoke",
+ "n_cases": 2,
+ "peaks_this_run": 35,
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "crop": 96,
+ "seconds": 18.6,
+ "missing": [],
+ "utc": "2026-11-14T20:21:07Z"
+}

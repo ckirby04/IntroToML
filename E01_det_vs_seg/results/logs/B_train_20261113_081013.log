@@ -1,0 +1,737 @@
+Using device: cuda:0
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+E01 arm B (E01HeatmapTrainer) on NVIDIA GeForce RTX 3070 Ti; seed 1600; resume=True at epoch 152; out G:\BrainMetShare\experiments\E01_det_vs_seg\data\nnUNet_results\Dataset901_E01T1c\E01HeatmapTrainer__nnUNetPlans__3d_fullres\fold_0
+2026-11-13 08:10:18.545367: do_dummy_2d_data_aug: False
+2026-11-13 08:10:18.550749: Using splits from existing split file: G:\BrainMetShare\experiments\E01_det_vs_seg\data\nnUNet_preprocessed\Dataset901_E01T1c\splits_final.json
+2026-11-13 08:10:18.556553: The split file contains 1 splits.
+2026-11-13 08:10:18.560997: Desired fold for training: 0
+2026-11-13 08:10:18.564622: This split has 357 training and 97 validation cases.
+using pin_memory on device 0
+using pin_memory on device 0
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+
+This is the configuration used by this training:
+Configuration name: 3d_fullres
+ {'data_identifier': 'nnUNetPlans_3d_fullres', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [160, 128, 112], 'median_image_size_in_voxels': [172.0, 137.0, 137.0], 'spacing': [1.0000213384628296, 1.0, 1.0000213384628296], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [True], 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'architecture': {'network_class_name': 'dynamic_network_architectures.architectures.unet.PlainConvUNet', 'arch_kwargs': {'n_stages': 6, 'features_per_stage': [32, 64, 128, 256, 320, 320], 'conv_op': 'torch.nn.modules.conv.Conv3d', 'kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]], 'strides': [[1, 1, 1], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 2], [2, 2, 1]], 'n_conv_per_stage': [2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2], 'conv_bias': True, 'norm_op': 'torch.nn.modules.instancenorm.InstanceNorm3d', 'norm_op_kwargs': {'eps': 1e-05, 'affine': True}, 'dropout_op': None, 'dropout_op_kwargs': None, 'nonlin': 'torch.nn.LeakyReLU', 'nonlin_kwargs': {'inplace': True}}, '_kw_requires_import': ['conv_op', 'norm_op', 'dropout_op', 'nonlin']}, 'batch_dice': False} 
+
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset901_E01T1c', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [1.0000213384628296, 1.0, 1.0000213384628296], 'original_median_shape_after_transp': [172, 137, 137], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [1, 0, 2], 'transpose_backward': [1, 0, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 11.764123916625977, 'mean': 1.5449607372283936, 'median': 1.3542710542678833, 'min': -8.308382034301758, 'percentile_00_5': -1.3407433032989502, 'percentile_99_5': 6.0364909172058105, 'std': 1.3492352962493896}}} 
+
+2026-11-13 08:10:36.657678: Unable to plot network architecture:
+2026-11-13 08:10:36.666745: No module named 'hiddenlayer'
+2026-11-13 08:10:36.712682: 
+2026-11-13 08:10:36.719687: Epoch 152
+2026-11-13 08:10:36.725729: Current learning rate: 0.0043
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+C:\Users\Clark\AppData\Roaming\Python\Python313\site-packages\fft_conv_pytorch\fft_conv.py:139: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\python_variable_indexing.cpp:353.)
+  output = output[crop_slices].contiguous()
+2026-11-13 08:12:23.417984: train_loss 0.6699
+2026-11-13 08:12:23.418683: val_loss 1.2213
+2026-11-13 08:12:23.427256: Pseudo dice [np.float64(nan)]
+2026-11-13 08:12:23.434152: Epoch time: 106.71 s
+2026-11-13 08:12:24.871655: 
+2026-11-13 08:12:24.879544: Epoch 153
+2026-11-13 08:12:24.887281: Current learning rate: 0.00427
+2026-11-13 08:13:59.898013: train_loss 0.7072
+2026-11-13 08:13:59.898510: val_loss 1.3153
+2026-11-13 08:13:59.908383: Pseudo dice [np.float64(nan)]
+2026-11-13 08:13:59.917915: Epoch time: 95.03 s
+2026-11-13 08:14:01.149313: 
+2026-11-13 08:14:01.154777: Epoch 154
+2026-11-13 08:14:01.159850: Current learning rate: 0.00423
+2026-11-13 08:15:36.998359: train_loss 0.7041
+2026-11-13 08:15:37.008204: val_loss 1.0311
+2026-11-13 08:15:37.016307: Pseudo dice [np.float64(nan)]
+2026-11-13 08:15:37.025329: Epoch time: 95.85 s
+2026-11-13 08:15:38.286561: 
+2026-11-13 08:15:38.292712: Epoch 155
+2026-11-13 08:15:38.297698: Current learning rate: 0.00419
+2026-11-13 08:17:14.772587: train_loss 0.7244
+2026-11-13 08:17:14.782103: val_loss 1.1249
+2026-11-13 08:17:14.790943: Pseudo dice [np.float64(nan)]
+2026-11-13 08:17:14.799099: Epoch time: 96.49 s
+2026-11-13 08:17:16.045643: 
+2026-11-13 08:17:16.051094: Epoch 156
+2026-11-13 08:17:16.056164: Current learning rate: 0.00415
+2026-11-13 08:18:52.498837: train_loss 0.6859
+2026-11-13 08:18:52.509675: val_loss 0.9726
+2026-11-13 08:18:52.517674: Pseudo dice [np.float64(nan)]
+2026-11-13 08:18:52.628907: Epoch time: 96.45 s
+2026-11-13 08:18:53.780105: 
+2026-11-13 08:18:53.785450: Epoch 157
+2026-11-13 08:18:53.790457: Current learning rate: 0.00411
+2026-11-13 08:20:30.648710: train_loss 0.7048
+2026-11-13 08:20:30.656497: val_loss 1.1587
+2026-11-13 08:20:30.666141: Pseudo dice [np.float64(nan)]
+2026-11-13 08:20:30.674364: Epoch time: 96.87 s
+2026-11-13 08:20:31.780311: 
+2026-11-13 08:20:31.785603: Epoch 158
+2026-11-13 08:20:31.793174: Current learning rate: 0.00407
+2026-11-13 08:22:08.586822: train_loss 0.6914
+2026-11-13 08:22:08.595753: val_loss 1.2864
+2026-11-13 08:22:08.603856: Pseudo dice [np.float64(nan)]
+2026-11-13 08:22:08.612803: Epoch time: 96.81 s
+2026-11-13 08:22:09.791487: 
+2026-11-13 08:22:09.799881: Epoch 159
+2026-11-13 08:22:09.806439: Current learning rate: 0.00403
+2026-11-13 08:23:46.578951: train_loss 0.7218
+2026-11-13 08:23:46.588800: val_loss 1.1197
+2026-11-13 08:23:46.597591: Pseudo dice [np.float64(nan)]
+2026-11-13 08:23:46.605692: Epoch time: 96.79 s
+2026-11-13 08:23:47.728545: 
+2026-11-13 08:23:47.733907: Epoch 160
+2026-11-13 08:23:47.739951: Current learning rate: 0.00399
+2026-11-13 08:25:24.632793: train_loss 0.6998
+2026-11-13 08:25:24.641468: val_loss 1.2814
+2026-11-13 08:25:24.649793: Pseudo dice [np.float64(nan)]
+2026-11-13 08:25:24.696212: Epoch time: 96.9 s
+2026-11-13 08:25:25.830245: 
+2026-11-13 08:25:25.836044: Epoch 161
+2026-11-13 08:25:25.841338: Current learning rate: 0.00395
+2026-11-13 08:27:02.568879: train_loss 0.7384
+2026-11-13 08:27:02.587194: val_loss 1.0928
+2026-11-13 08:27:02.606385: Pseudo dice [np.float64(nan)]
+2026-11-13 08:27:02.632759: Epoch time: 96.74 s
+2026-11-13 08:27:03.870566: 
+2026-11-13 08:27:03.875675: Epoch 162
+2026-11-13 08:27:03.880408: Current learning rate: 0.00391
+2026-11-13 08:28:40.555032: train_loss 0.7121
+2026-11-13 08:28:40.563478: val_loss 1.0539
+2026-11-13 08:28:40.572211: Pseudo dice [np.float64(nan)]
+2026-11-13 08:28:40.581588: Epoch time: 96.68 s
+2026-11-13 08:28:41.884976: 
+2026-11-13 08:28:41.894349: Epoch 163
+2026-11-13 08:28:41.902499: Current learning rate: 0.00387
+2026-11-13 08:30:18.851288: train_loss 0.7073
+2026-11-13 08:30:18.940223: val_loss 0.9611
+2026-11-13 08:30:19.102905: Pseudo dice [np.float64(nan)]
+2026-11-13 08:30:19.240723: Epoch time: 96.97 s
+2026-11-13 08:30:20.290457: 
+2026-11-13 08:30:20.295241: Epoch 164
+2026-11-13 08:30:20.300284: Current learning rate: 0.00383
+2026-11-13 08:31:57.312075: train_loss 0.71
+2026-11-13 08:31:57.319889: val_loss 1.1107
+2026-11-13 08:31:57.330119: Pseudo dice [np.float64(nan)]
+2026-11-13 08:31:57.338616: Epoch time: 97.02 s
+2026-11-13 08:31:58.466586: 
+2026-11-13 08:31:58.471875: Epoch 165
+2026-11-13 08:31:58.476914: Current learning rate: 0.00379
+2026-11-13 08:33:35.248456: train_loss 0.6702
+2026-11-13 08:33:35.256612: val_loss 1.1313
+2026-11-13 08:33:35.264974: Pseudo dice [np.float64(nan)]
+2026-11-13 08:33:35.275264: Epoch time: 96.78 s
+2026-11-13 08:33:36.493625: 
+2026-11-13 08:33:36.499062: Epoch 166
+2026-11-13 08:33:36.504489: Current learning rate: 0.00375
+2026-11-13 08:35:13.699820: train_loss 0.711
+2026-11-13 08:35:13.707052: val_loss 1.1399
+2026-11-13 08:35:13.715517: Pseudo dice [np.float64(nan)]
+2026-11-13 08:35:13.724647: Epoch time: 97.21 s
+2026-11-13 08:35:15.078093: 
+2026-11-13 08:35:15.083422: Epoch 167
+2026-11-13 08:35:15.088379: Current learning rate: 0.00371
+2026-11-13 08:36:52.318632: train_loss 0.7366
+2026-11-13 08:36:52.327447: val_loss 0.9953
+2026-11-13 08:36:52.336129: Pseudo dice [np.float64(nan)]
+2026-11-13 08:36:52.345407: Epoch time: 97.24 s
+2026-11-13 08:36:53.373700: 
+2026-11-13 08:36:53.378916: Epoch 168
+2026-11-13 08:36:53.383293: Current learning rate: 0.00367
+2026-11-13 08:38:30.546256: train_loss 0.6799
+2026-11-13 08:38:30.555513: val_loss 1.0857
+2026-11-13 08:38:30.564599: Pseudo dice [np.float64(nan)]
+2026-11-13 08:38:30.573092: Epoch time: 97.17 s
+2026-11-13 08:38:31.704535: 
+2026-11-13 08:38:31.711375: Epoch 169
+2026-11-13 08:38:31.717979: Current learning rate: 0.00363
+2026-11-13 08:40:08.874485: train_loss 0.6935
+2026-11-13 08:40:08.882978: val_loss 0.9786
+2026-11-13 08:40:08.891601: Pseudo dice [np.float64(nan)]
+2026-11-13 08:40:08.900161: Epoch time: 97.17 s
+2026-11-13 08:40:10.127402: 
+2026-11-13 08:40:10.132989: Epoch 170
+2026-11-13 08:40:10.137517: Current learning rate: 0.00359
+2026-11-13 08:41:47.285840: train_loss 0.6789
+2026-11-13 08:41:47.294969: val_loss 1.1941
+2026-11-13 08:41:47.302829: Pseudo dice [np.float64(nan)]
+2026-11-13 08:41:47.311676: Epoch time: 97.16 s
+2026-11-13 08:41:48.485756: 
+2026-11-13 08:41:48.494200: Epoch 171
+2026-11-13 08:41:48.500661: Current learning rate: 0.00355
+2026-11-13 08:43:25.383428: train_loss 0.6796
+2026-11-13 08:43:25.474596: val_loss 1.0377
+2026-11-13 08:43:25.500969: Pseudo dice [np.float64(nan)]
+2026-11-13 08:43:25.509905: Epoch time: 96.9 s
+2026-11-13 08:43:26.793060: 
+2026-11-13 08:43:26.798101: Epoch 172
+2026-11-13 08:43:26.802656: Current learning rate: 0.00351
+2026-11-13 08:45:04.318448: train_loss 0.6953
+2026-11-13 08:45:04.326143: val_loss 1.1198
+2026-11-13 08:45:04.346361: Pseudo dice [np.float64(nan)]
+2026-11-13 08:45:04.354964: Epoch time: 97.53 s
+2026-11-13 08:45:05.229537: 
+2026-11-13 08:45:05.235684: Epoch 173
+2026-11-13 08:45:05.240618: Current learning rate: 0.00346
+2026-11-13 08:46:41.932214: train_loss 0.6367
+2026-11-13 08:46:41.940628: val_loss 1.2003
+2026-11-13 08:46:41.949826: Pseudo dice [np.float64(nan)]
+2026-11-13 08:46:41.959826: Epoch time: 96.7 s
+2026-11-13 08:46:43.209158: 
+2026-11-13 08:46:43.214006: Epoch 174
+2026-11-13 08:46:43.219237: Current learning rate: 0.00342
+2026-11-13 08:48:20.051769: train_loss 0.6653
+2026-11-13 08:48:20.151346: val_loss 0.9501
+2026-11-13 08:48:20.213748: Pseudo dice [np.float64(nan)]
+2026-11-13 08:48:20.256333: Epoch time: 96.84 s
+2026-11-13 08:48:21.433611: 
+2026-11-13 08:48:21.438838: Epoch 175
+2026-11-13 08:48:21.443588: Current learning rate: 0.00338
+2026-11-13 08:49:58.659446: train_loss 0.6748
+2026-11-13 08:49:58.667028: val_loss 1.2037
+2026-11-13 08:49:58.675777: Pseudo dice [np.float64(nan)]
+2026-11-13 08:49:58.684681: Epoch time: 97.23 s
+2026-11-13 08:49:59.775283: 
+2026-11-13 08:49:59.780622: Epoch 176
+2026-11-13 08:49:59.785928: Current learning rate: 0.00334
+2026-11-13 08:51:36.721072: train_loss 0.7093
+2026-11-13 08:51:36.728426: val_loss 1.1305
+2026-11-13 08:51:36.736870: Pseudo dice [np.float64(nan)]
+2026-11-13 08:51:36.744906: Epoch time: 96.95 s
+2026-11-13 08:51:37.880197: 
+2026-11-13 08:51:37.887698: Epoch 177
+2026-11-13 08:51:37.894964: Current learning rate: 0.0033
+2026-11-13 08:53:14.984214: train_loss 0.6774
+2026-11-13 08:53:14.991144: val_loss 1.1629
+2026-11-13 08:53:14.999424: Pseudo dice [np.float64(nan)]
+2026-11-13 08:53:15.007550: Epoch time: 97.1 s
+2026-11-13 08:53:16.040894: 
+2026-11-13 08:53:16.046221: Epoch 178
+2026-11-13 08:53:16.050644: Current learning rate: 0.00326
+2026-11-13 08:54:53.020291: train_loss 0.6746
+2026-11-13 08:54:53.028510: val_loss 1.1099
+2026-11-13 08:54:53.036256: Pseudo dice [np.float64(nan)]
+2026-11-13 08:54:53.045665: Epoch time: 96.98 s
+2026-11-13 08:54:54.360239: 
+2026-11-13 08:54:54.365909: Epoch 179
+2026-11-13 08:54:54.371130: Current learning rate: 0.00322
+2026-11-13 08:56:31.603656: train_loss 0.6653
+2026-11-13 08:56:31.611757: val_loss 1.1916
+2026-11-13 08:56:31.620523: Pseudo dice [np.float64(nan)]
+2026-11-13 08:56:31.629445: Epoch time: 97.24 s
+2026-11-13 08:56:32.767884: 
+2026-11-13 08:56:32.773111: Epoch 180
+2026-11-13 08:56:32.777722: Current learning rate: 0.00318
+2026-11-13 08:58:09.496490: train_loss 0.6104
+2026-11-13 08:58:09.504505: val_loss 1.0876
+2026-11-13 08:58:09.512734: Pseudo dice [np.float64(nan)]
+2026-11-13 08:58:09.522184: Epoch time: 96.73 s
+2026-11-13 08:58:10.709116: 
+2026-11-13 08:58:10.714766: Epoch 181
+2026-11-13 08:58:10.722294: Current learning rate: 0.00314
+2026-11-13 08:59:47.769896: train_loss 0.6586
+2026-11-13 08:59:47.778158: val_loss 1.1118
+2026-11-13 08:59:47.788517: Pseudo dice [np.float64(nan)]
+2026-11-13 08:59:47.796580: Epoch time: 97.06 s
+2026-11-13 08:59:49.014715: 
+2026-11-13 08:59:49.019933: Epoch 182
+2026-11-13 08:59:49.025482: Current learning rate: 0.0031
+2026-11-13 09:01:26.273972: train_loss 0.6517
+2026-11-13 09:01:26.282807: val_loss 1.0015
+2026-11-13 09:01:26.290472: Pseudo dice [np.float64(nan)]
+2026-11-13 09:01:26.297995: Epoch time: 97.26 s
+2026-11-13 09:01:27.520685: 
+2026-11-13 09:01:27.525767: Epoch 183
+2026-11-13 09:01:27.531095: Current learning rate: 0.00306
+2026-11-13 09:03:05.109927: train_loss 0.6239
+2026-11-13 09:03:05.117174: val_loss 1.0877
+2026-11-13 09:03:05.124819: Pseudo dice [np.float64(nan)]
+2026-11-13 09:03:05.133109: Epoch time: 97.59 s
+2026-11-13 09:03:06.460423: 
+2026-11-13 09:03:06.465567: Epoch 184
+2026-11-13 09:03:06.470472: Current learning rate: 0.00302
+2026-11-13 09:04:43.709164: train_loss 0.6171
+2026-11-13 09:04:43.720402: val_loss 1.12
+2026-11-13 09:04:43.728385: Pseudo dice [np.float64(nan)]
+2026-11-13 09:04:43.736746: Epoch time: 97.25 s
+2026-11-13 09:04:44.906202: 
+2026-11-13 09:04:44.910996: Epoch 185
+2026-11-13 09:04:44.918625: Current learning rate: 0.00297
+2026-11-13 09:06:22.385594: train_loss 0.5901
+2026-11-13 09:06:22.393256: val_loss 1.1211
+2026-11-13 09:06:22.408451: Pseudo dice [np.float64(nan)]
+2026-11-13 09:06:22.419550: Epoch time: 97.48 s
+2026-11-13 09:06:23.571101: 
+2026-11-13 09:06:23.576420: Epoch 186
+2026-11-13 09:06:23.582068: Current learning rate: 0.00293
+2026-11-13 09:08:00.878334: train_loss 0.6749
+2026-11-13 09:08:00.887004: val_loss 1.4153
+2026-11-13 09:08:00.895058: Pseudo dice [np.float64(nan)]
+2026-11-13 09:08:00.903795: Epoch time: 97.31 s
+2026-11-13 09:08:02.094094: 
+2026-11-13 09:08:02.104553: Epoch 187
+2026-11-13 09:08:02.113924: Current learning rate: 0.00289
+2026-11-13 09:09:39.105294: train_loss 0.6543
+2026-11-13 09:09:39.114327: val_loss 1.2074
+2026-11-13 09:09:39.123225: Pseudo dice [np.float64(nan)]
+2026-11-13 09:09:39.130912: Epoch time: 97.01 s
+2026-11-13 09:09:40.561580: 
+2026-11-13 09:09:40.568978: Epoch 188
+2026-11-13 09:09:40.576824: Current learning rate: 0.00285
+2026-11-13 09:11:17.730714: train_loss 0.653
+2026-11-13 09:11:17.738728: val_loss 1.0325
+2026-11-13 09:11:17.746550: Pseudo dice [np.float64(nan)]
+2026-11-13 09:11:17.755210: Epoch time: 97.17 s
+2026-11-13 09:11:18.819489: 
+2026-11-13 09:11:18.831910: Epoch 189
+2026-11-13 09:11:18.839649: Current learning rate: 0.00281
+2026-11-13 09:12:56.209894: train_loss 0.6487
+2026-11-13 09:12:56.218146: val_loss 1.11
+2026-11-13 09:12:56.226748: Pseudo dice [np.float64(nan)]
+2026-11-13 09:12:56.235673: Epoch time: 97.39 s
+2026-11-13 09:12:57.435711: 
+2026-11-13 09:12:57.442016: Epoch 190
+2026-11-13 09:12:57.449231: Current learning rate: 0.00277
+2026-11-13 09:14:34.338777: train_loss 0.599
+2026-11-13 09:14:34.346593: val_loss 1.0158
+2026-11-13 09:14:34.354472: Pseudo dice [np.float64(nan)]
+2026-11-13 09:14:34.363834: Epoch time: 96.9 s
+2026-11-13 09:14:35.600158: 
+2026-11-13 09:14:35.605485: Epoch 191
+2026-11-13 09:14:35.609776: Current learning rate: 0.00273
+2026-11-13 09:16:12.569259: train_loss 0.6735
+2026-11-13 09:16:12.576629: val_loss 1.0344
+2026-11-13 09:16:12.585817: Pseudo dice [np.float64(nan)]
+2026-11-13 09:16:12.594661: Epoch time: 96.97 s
+2026-11-13 09:16:13.652163: 
+2026-11-13 09:16:13.657799: Epoch 192
+2026-11-13 09:16:13.661910: Current learning rate: 0.00268
+2026-11-13 09:17:50.725441: train_loss 0.6364
+2026-11-13 09:17:50.733389: val_loss 0.9839
+2026-11-13 09:17:50.741180: Pseudo dice [np.float64(nan)]
+2026-11-13 09:17:50.748807: Epoch time: 97.07 s
+2026-11-13 09:17:51.789212: 
+2026-11-13 09:17:51.794656: Epoch 193
+2026-11-13 09:17:51.799020: Current learning rate: 0.00264
+2026-11-13 09:19:29.225764: train_loss 0.6594
+2026-11-13 09:19:29.234896: val_loss 1.2792
+2026-11-13 09:19:29.245222: Pseudo dice [np.float64(nan)]
+2026-11-13 09:19:29.253131: Epoch time: 97.44 s
+2026-11-13 09:19:30.506935: 
+2026-11-13 09:19:30.514424: Epoch 194
+2026-11-13 09:19:30.522220: Current learning rate: 0.0026
+2026-11-13 09:21:07.718061: train_loss 0.619
+2026-11-13 09:21:07.726107: val_loss 1.0614
+2026-11-13 09:21:07.735403: Pseudo dice [np.float64(nan)]
+2026-11-13 09:21:07.743887: Epoch time: 97.21 s
+2026-11-13 09:21:09.037846: 
+2026-11-13 09:21:09.042978: Epoch 195
+2026-11-13 09:21:09.047379: Current learning rate: 0.00256
+2026-11-13 09:22:45.888757: train_loss 0.6153
+2026-11-13 09:22:45.897044: val_loss 1.0406
+2026-11-13 09:22:45.905511: Pseudo dice [np.float64(nan)]
+2026-11-13 09:22:45.913869: Epoch time: 96.85 s
+2026-11-13 09:22:47.142502: 
+2026-11-13 09:22:47.148170: Epoch 196
+2026-11-13 09:22:47.152927: Current learning rate: 0.00252
+2026-11-13 09:24:24.181440: train_loss 0.6316
+2026-11-13 09:24:24.190636: val_loss 1.1946
+2026-11-13 09:24:24.198685: Pseudo dice [np.float64(nan)]
+2026-11-13 09:24:24.207276: Epoch time: 97.04 s
+2026-11-13 09:24:25.323781: 
+2026-11-13 09:24:25.330724: Epoch 197
+2026-11-13 09:24:25.338989: Current learning rate: 0.00248
+2026-11-13 09:26:02.717070: train_loss 0.6598
+2026-11-13 09:26:02.724711: val_loss 1.1961
+2026-11-13 09:26:02.733075: Pseudo dice [np.float64(nan)]
+2026-11-13 09:26:02.740759: Epoch time: 97.39 s
+2026-11-13 09:26:04.075098: 
+2026-11-13 09:26:04.083386: Epoch 198
+2026-11-13 09:26:04.090962: Current learning rate: 0.00243
+2026-11-13 09:27:41.275798: train_loss 0.6175
+2026-11-13 09:27:41.284091: val_loss 1.0846
+2026-11-13 09:27:41.291580: Pseudo dice [np.float64(nan)]
+2026-11-13 09:27:41.299221: Epoch time: 97.2 s
+2026-11-13 09:27:42.585009: 
+2026-11-13 09:27:42.590158: Epoch 199
+2026-11-13 09:27:42.595180: Current learning rate: 0.00239
+2026-11-13 09:29:19.750584: train_loss 0.6199
+2026-11-13 09:29:19.758909: val_loss 1.0059
+2026-11-13 09:29:19.768821: Pseudo dice [np.float64(nan)]
+2026-11-13 09:29:19.776657: Epoch time: 97.17 s
+2026-11-13 09:29:21.005180: 
+2026-11-13 09:29:21.012429: Epoch 200
+2026-11-13 09:29:21.019302: Current learning rate: 0.00235
+2026-11-13 09:30:58.309177: train_loss 0.6374
+2026-11-13 09:30:58.321208: val_loss 0.9991
+2026-11-13 09:30:58.330586: Pseudo dice [np.float64(nan)]
+2026-11-13 09:30:58.338458: Epoch time: 97.3 s
+2026-11-13 09:30:59.472848: 
+2026-11-13 09:30:59.479132: Epoch 201
+2026-11-13 09:30:59.484645: Current learning rate: 0.00231
+2026-11-13 09:32:36.781770: train_loss 0.6348
+2026-11-13 09:32:36.790414: val_loss 1.074
+2026-11-13 09:32:36.799040: Pseudo dice [np.float64(nan)]
+2026-11-13 09:32:36.806995: Epoch time: 97.31 s
+2026-11-13 09:32:38.080564: 
+2026-11-13 09:32:38.085640: Epoch 202
+2026-11-13 09:32:38.090437: Current learning rate: 0.00226
+2026-11-13 09:34:15.220012: train_loss 0.6087
+2026-11-13 09:34:15.228431: val_loss 1.3056
+2026-11-13 09:34:15.236467: Pseudo dice [np.float64(nan)]
+2026-11-13 09:34:15.244920: Epoch time: 97.14 s
+2026-11-13 09:34:16.637454: 
+2026-11-13 09:34:16.642755: Epoch 203
+2026-11-13 09:34:16.647308: Current learning rate: 0.00222
+2026-11-13 09:35:53.651034: train_loss 0.5846
+2026-11-13 09:35:53.658960: val_loss 1.0712
+2026-11-13 09:35:53.666621: Pseudo dice [np.float64(nan)]
+2026-11-13 09:35:53.675897: Epoch time: 97.01 s
+2026-11-13 09:35:54.811362: 
+2026-11-13 09:35:54.816874: Epoch 204
+2026-11-13 09:35:54.821335: Current learning rate: 0.00218
+2026-11-13 09:37:31.921289: train_loss 0.6136
+2026-11-13 09:37:31.930197: val_loss 1.0199
+2026-11-13 09:37:31.939606: Pseudo dice [np.float64(nan)]
+2026-11-13 09:37:31.947566: Epoch time: 97.11 s
+2026-11-13 09:37:33.252710: 
+2026-11-13 09:37:33.257812: Epoch 205
+2026-11-13 09:37:33.264575: Current learning rate: 0.00214
+2026-11-13 09:39:10.444699: train_loss 0.5677
+2026-11-13 09:39:10.453522: val_loss 1.1207
+2026-11-13 09:39:10.461868: Pseudo dice [np.float64(nan)]
+2026-11-13 09:39:10.470882: Epoch time: 97.19 s
+2026-11-13 09:39:11.477175: 
+2026-11-13 09:39:11.482088: Epoch 206
+2026-11-13 09:39:11.487031: Current learning rate: 0.00209
+2026-11-13 09:40:48.689236: train_loss 0.5591
+2026-11-13 09:40:48.697177: val_loss 1.1738
+2026-11-13 09:40:48.704870: Pseudo dice [np.float64(nan)]
+2026-11-13 09:40:48.713109: Epoch time: 97.21 s
+2026-11-13 09:40:49.914450: 
+2026-11-13 09:40:49.919489: Epoch 207
+2026-11-13 09:40:49.925868: Current learning rate: 0.00205
+2026-11-13 09:42:26.663227: train_loss 0.5894
+2026-11-13 09:42:26.672860: val_loss 1.0685
+2026-11-13 09:42:26.681506: Pseudo dice [np.float64(nan)]
+2026-11-13 09:42:26.689687: Epoch time: 96.75 s
+2026-11-13 09:42:27.916443: 
+2026-11-13 09:42:27.921819: Epoch 208
+2026-11-13 09:42:27.926682: Current learning rate: 0.00201
+2026-11-13 09:44:05.092827: train_loss 0.6078
+2026-11-13 09:44:05.100537: val_loss 1.0847
+2026-11-13 09:44:05.108157: Pseudo dice [np.float64(nan)]
+2026-11-13 09:44:05.116721: Epoch time: 97.18 s
+2026-11-13 09:44:06.200327: 
+2026-11-13 09:44:06.205653: Epoch 209
+2026-11-13 09:44:06.212114: Current learning rate: 0.00196
+2026-11-13 09:45:43.305738: train_loss 0.5982
+2026-11-13 09:45:43.313322: val_loss 1.124
+2026-11-13 09:45:43.322929: Pseudo dice [np.float64(nan)]
+2026-11-13 09:45:43.331122: Epoch time: 97.11 s
+2026-11-13 09:45:44.516702: 
+2026-11-13 09:45:44.524191: Epoch 210
+2026-11-13 09:45:44.529442: Current learning rate: 0.00192
+2026-11-13 09:47:22.112498: train_loss 0.5476
+2026-11-13 09:47:22.119996: val_loss 1.2193
+2026-11-13 09:47:22.128779: Pseudo dice [np.float64(nan)]
+2026-11-13 09:47:22.137552: Epoch time: 97.6 s
+2026-11-13 09:47:23.279144: 
+2026-11-13 09:47:23.285678: Epoch 211
+2026-11-13 09:47:23.291049: Current learning rate: 0.00188
+2026-11-13 09:49:00.406479: train_loss 0.5449
+2026-11-13 09:49:00.414420: val_loss 1.3169
+2026-11-13 09:49:00.422660: Pseudo dice [np.float64(nan)]
+2026-11-13 09:49:00.431027: Epoch time: 97.13 s
+2026-11-13 09:49:01.666551: 
+2026-11-13 09:49:01.672068: Epoch 212
+2026-11-13 09:49:01.676964: Current learning rate: 0.00184
+2026-11-13 09:50:39.226955: train_loss 0.5696
+2026-11-13 09:50:39.234931: val_loss 1.3517
+2026-11-13 09:50:39.244109: Pseudo dice [np.float64(nan)]
+2026-11-13 09:50:39.251302: Epoch time: 97.56 s
+2026-11-13 09:50:40.318122: 
+2026-11-13 09:50:40.323407: Epoch 213
+2026-11-13 09:50:40.330123: Current learning rate: 0.00179
+2026-11-13 09:52:17.604032: train_loss 0.5508
+2026-11-13 09:52:17.621936: val_loss 1.2052
+2026-11-13 09:52:17.651339: Pseudo dice [np.float64(nan)]
+2026-11-13 09:52:17.699609: Epoch time: 97.29 s
+2026-11-13 09:52:18.832139: 
+2026-11-13 09:52:18.837780: Epoch 214
+2026-11-13 09:52:18.842636: Current learning rate: 0.00175
+2026-11-13 09:53:56.228268: train_loss 0.5861
+2026-11-13 09:53:56.261237: val_loss 1.1903
+2026-11-13 09:53:56.270492: Pseudo dice [np.float64(nan)]
+2026-11-13 09:53:56.279955: Epoch time: 97.4 s
+2026-11-13 09:53:57.490572: 
+2026-11-13 09:53:57.496164: Epoch 215
+2026-11-13 09:53:57.500399: Current learning rate: 0.0017
+2026-11-13 09:55:34.473424: train_loss 0.5673
+2026-11-13 09:55:34.482607: val_loss 1.2187
+2026-11-13 09:55:34.491023: Pseudo dice [np.float64(nan)]
+2026-11-13 09:55:34.501663: Epoch time: 96.98 s
+2026-11-13 09:55:35.757669: 
+2026-11-13 09:55:35.763469: Epoch 216
+2026-11-13 09:55:35.770235: Current learning rate: 0.00166
+2026-11-13 09:57:12.647166: train_loss 0.5422
+2026-11-13 09:57:12.656281: val_loss 1.1217
+2026-11-13 09:57:12.665302: Pseudo dice [np.float64(nan)]
+2026-11-13 09:57:12.675018: Epoch time: 96.89 s
+2026-11-13 09:57:13.861245: 
+2026-11-13 09:57:13.867127: Epoch 217
+2026-11-13 09:57:13.871884: Current learning rate: 0.00162
+2026-11-13 09:58:49.937403: train_loss 0.5512
+2026-11-13 09:58:49.951869: val_loss 1.0771
+2026-11-13 09:58:49.960338: Pseudo dice [np.float64(nan)]
+2026-11-13 09:58:49.968103: Epoch time: 96.08 s
+2026-11-13 09:58:51.137527: 
+2026-11-13 09:58:51.142998: Epoch 218
+2026-11-13 09:58:51.147402: Current learning rate: 0.00157
+2026-11-13 10:00:27.554112: train_loss 0.5289
+2026-11-13 10:00:27.562856: val_loss 1.564
+2026-11-13 10:00:27.570612: Pseudo dice [np.float64(nan)]
+2026-11-13 10:00:27.579186: Epoch time: 96.42 s
+2026-11-13 10:00:28.599414: 
+2026-11-13 10:00:28.604946: Epoch 219
+2026-11-13 10:00:28.609392: Current learning rate: 0.00153
+2026-11-13 10:02:04.777046: train_loss 0.5842
+2026-11-13 10:02:04.784754: val_loss 1.3949
+2026-11-13 10:02:04.793562: Pseudo dice [np.float64(nan)]
+2026-11-13 10:02:04.802562: Epoch time: 96.18 s
+2026-11-13 10:02:05.771377: 
+2026-11-13 10:02:05.778226: Epoch 220
+2026-11-13 10:02:05.785300: Current learning rate: 0.00148
+2026-11-13 10:03:39.531474: train_loss 0.5835
+2026-11-13 10:03:39.542027: val_loss 1.1287
+2026-11-13 10:03:39.549719: Pseudo dice [np.float64(nan)]
+2026-11-13 10:03:39.558622: Epoch time: 93.76 s
+2026-11-13 10:03:40.703631: 
+2026-11-13 10:03:40.708922: Epoch 221
+2026-11-13 10:03:40.713360: Current learning rate: 0.00144
+2026-11-13 10:05:15.088603: train_loss 0.5305
+2026-11-13 10:05:15.098572: val_loss 1.4472
+2026-11-13 10:05:15.106260: Pseudo dice [np.float64(nan)]
+2026-11-13 10:05:15.114930: Epoch time: 94.39 s
+2026-11-13 10:05:16.117738: 
+2026-11-13 10:05:16.125817: Epoch 222
+2026-11-13 10:05:16.134259: Current learning rate: 0.00139
+2026-11-13 10:06:51.263653: train_loss 0.5556
+2026-11-13 10:06:51.309721: val_loss 1.2036
+2026-11-13 10:06:51.317843: Pseudo dice [np.float64(nan)]
+2026-11-13 10:06:51.326894: Epoch time: 95.15 s
+2026-11-13 10:06:52.262864: 
+2026-11-13 10:06:52.268557: Epoch 223
+2026-11-13 10:06:52.273017: Current learning rate: 0.00135
+2026-11-13 10:08:27.125247: train_loss 0.5749
+2026-11-13 10:08:27.140674: val_loss 0.9763
+2026-11-13 10:08:27.150232: Pseudo dice [np.float64(nan)]
+2026-11-13 10:08:27.158124: Epoch time: 94.86 s
+2026-11-13 10:08:28.296837: 
+2026-11-13 10:08:28.302618: Epoch 224
+2026-11-13 10:08:28.308573: Current learning rate: 0.0013
+2026-11-13 10:10:03.215545: train_loss 0.5534
+2026-11-13 10:10:03.228441: val_loss 1.1652
+2026-11-13 10:10:03.240368: Pseudo dice [np.float64(nan)]
+2026-11-13 10:10:03.250560: Epoch time: 94.92 s
+2026-11-13 10:10:04.325236: 
+2026-11-13 10:10:04.331501: Epoch 225
+2026-11-13 10:10:04.336818: Current learning rate: 0.00126
+2026-11-13 10:11:39.611735: train_loss 0.5322
+2026-11-13 10:11:39.621516: val_loss 1.0345
+2026-11-13 10:11:39.631627: Pseudo dice [np.float64(nan)]
+2026-11-13 10:11:39.640188: Epoch time: 95.29 s
+2026-11-13 10:11:40.623285: 
+2026-11-13 10:11:40.633535: Epoch 226
+2026-11-13 10:11:40.640396: Current learning rate: 0.00121
+2026-11-13 10:13:15.492419: train_loss 0.5364
+2026-11-13 10:13:15.500387: val_loss 0.8444
+2026-11-13 10:13:15.510288: Pseudo dice [np.float64(nan)]
+2026-11-13 10:13:15.519199: Epoch time: 94.87 s
+2026-11-13 10:13:16.509582: 
+2026-11-13 10:13:16.520368: Epoch 227
+2026-11-13 10:13:16.530739: Current learning rate: 0.00117
+2026-11-13 10:14:51.348773: train_loss 0.5256
+2026-11-13 10:14:51.359075: val_loss 1.2159
+2026-11-13 10:14:51.370399: Pseudo dice [np.float64(nan)]
+2026-11-13 10:14:51.381621: Epoch time: 94.84 s
+2026-11-13 10:14:52.533509: 
+2026-11-13 10:14:52.540284: Epoch 228
+2026-11-13 10:14:52.546166: Current learning rate: 0.00112
+2026-11-13 10:16:28.812707: train_loss 0.5687
+2026-11-13 10:16:28.822489: val_loss 0.9605
+2026-11-13 10:16:28.834546: Pseudo dice [np.float64(nan)]
+2026-11-13 10:16:28.846260: Epoch time: 96.28 s
+2026-11-13 10:16:29.594537: 
+2026-11-13 10:16:29.601243: Epoch 229
+2026-11-13 10:16:29.607309: Current learning rate: 0.00108
+2026-11-13 10:18:05.331721: train_loss 0.532
+2026-11-13 10:18:05.342223: val_loss 1.1505
+2026-11-13 10:18:05.356305: Pseudo dice [np.float64(nan)]
+2026-11-13 10:18:05.368278: Epoch time: 95.74 s
+2026-11-13 10:18:06.460504: 
+2026-11-13 10:18:06.467657: Epoch 230
+2026-11-13 10:18:06.479258: Current learning rate: 0.00103
+2026-11-13 10:19:41.941239: train_loss 0.5455
+2026-11-13 10:19:41.953201: val_loss 0.9962
+2026-11-13 10:19:41.965600: Pseudo dice [np.float64(nan)]
+2026-11-13 10:19:41.976013: Epoch time: 95.48 s
+2026-11-13 10:19:43.096411: 
+2026-11-13 10:19:43.102646: Epoch 231
+2026-11-13 10:19:43.107882: Current learning rate: 0.00098
+2026-11-13 10:21:18.503860: train_loss 0.5464
+2026-11-13 10:21:18.512567: val_loss 1.1977
+2026-11-13 10:21:18.523471: Pseudo dice [np.float64(nan)]
+2026-11-13 10:21:18.534487: Epoch time: 95.41 s
+2026-11-13 10:21:19.510633: 
+2026-11-13 10:21:19.522242: Epoch 232
+2026-11-13 10:21:19.529031: Current learning rate: 0.00094
+2026-11-13 10:22:55.285039: train_loss 0.5086
+2026-11-13 10:22:55.294722: val_loss 0.9711
+2026-11-13 10:22:55.306406: Pseudo dice [np.float64(nan)]
+2026-11-13 10:22:55.315912: Epoch time: 95.77 s
+2026-11-13 10:22:56.450460: 
+2026-11-13 10:22:56.460279: Epoch 233
+2026-11-13 10:22:56.468014: Current learning rate: 0.00089
+2026-11-13 10:24:32.372622: train_loss 0.5505
+2026-11-13 10:24:32.381723: val_loss 1.1172
+2026-11-13 10:24:32.391384: Pseudo dice [np.float64(nan)]
+2026-11-13 10:24:32.401639: Epoch time: 95.92 s
+2026-11-13 10:24:33.408170: 
+2026-11-13 10:24:33.414182: Epoch 234
+2026-11-13 10:24:33.419001: Current learning rate: 0.00084
+2026-11-13 10:26:09.161729: train_loss 0.5428
+2026-11-13 10:26:09.209821: val_loss 1.3653
+2026-11-13 10:26:09.265006: Pseudo dice [np.float64(nan)]
+2026-11-13 10:26:09.490763: Epoch time: 95.75 s
+2026-11-13 10:26:10.476711: 
+2026-11-13 10:26:10.482990: Epoch 235
+2026-11-13 10:26:10.488245: Current learning rate: 0.00079
+2026-11-13 10:27:46.671134: train_loss 0.5275
+2026-11-13 10:27:46.679970: val_loss 1.0626
+2026-11-13 10:27:46.689633: Pseudo dice [np.float64(nan)]
+2026-11-13 10:27:46.699942: Epoch time: 96.19 s
+2026-11-13 10:27:47.909253: 
+2026-11-13 10:27:47.915139: Epoch 236
+2026-11-13 10:27:47.921334: Current learning rate: 0.00075
+2026-11-13 10:29:23.627458: train_loss 0.5295
+2026-11-13 10:29:23.636240: val_loss 1.0482
+2026-11-13 10:29:23.644005: Pseudo dice [np.float64(nan)]
+2026-11-13 10:29:23.653045: Epoch time: 95.72 s
+2026-11-13 10:29:25.184661: 
+2026-11-13 10:29:25.193128: Epoch 237
+2026-11-13 10:29:25.200336: Current learning rate: 0.0007
+2026-11-13 10:30:59.292494: train_loss 0.5017
+2026-11-13 10:30:59.303114: val_loss 1.0403
+2026-11-13 10:30:59.313342: Pseudo dice [np.float64(nan)]
+2026-11-13 10:30:59.322778: Epoch time: 94.11 s
+2026-11-13 10:31:00.170463: 
+2026-11-13 10:31:00.181193: Epoch 238
+2026-11-13 10:31:00.186185: Current learning rate: 0.00065
+2026-11-13 10:32:34.321468: train_loss 0.5075
+2026-11-13 10:32:34.333823: val_loss 1.1815
+2026-11-13 10:32:34.344197: Pseudo dice [np.float64(nan)]
+2026-11-13 10:32:34.353835: Epoch time: 94.15 s
+2026-11-13 10:32:35.536161: 
+2026-11-13 10:32:35.542370: Epoch 239
+2026-11-13 10:32:35.548747: Current learning rate: 0.0006
+2026-11-13 10:34:11.208942: train_loss 0.4847
+2026-11-13 10:34:11.222174: val_loss 1.4339
+2026-11-13 10:34:11.231555: Pseudo dice [np.float64(nan)]
+2026-11-13 10:34:11.242120: Epoch time: 95.67 s
+2026-11-13 10:34:12.257046: 
+2026-11-13 10:34:12.263058: Epoch 240
+2026-11-13 10:34:12.268952: Current learning rate: 0.00055
+2026-11-13 10:35:46.892874: train_loss 0.486
+2026-11-13 10:35:46.906461: val_loss 1.3233
+2026-11-13 10:35:46.915286: Pseudo dice [np.float64(nan)]
+2026-11-13 10:35:46.925632: Epoch time: 94.64 s
+2026-11-13 10:35:48.104771: 
+2026-11-13 10:35:48.113479: Epoch 241
+2026-11-13 10:35:48.118553: Current learning rate: 0.0005
+2026-11-13 10:37:23.858317: train_loss 0.5054
+2026-11-13 10:37:23.867701: val_loss 1.2922
+2026-11-13 10:37:23.878175: Pseudo dice [np.float64(nan)]
+2026-11-13 10:37:23.887692: Epoch time: 95.75 s
+2026-11-13 10:37:24.775837: 
+2026-11-13 10:37:24.787187: Epoch 242
+2026-11-13 10:37:24.796129: Current learning rate: 0.00045
+2026-11-13 10:39:00.030597: train_loss 0.4823
+2026-11-13 10:39:00.173647: val_loss 1.31
+2026-11-13 10:39:00.234032: Pseudo dice [np.float64(nan)]
+2026-11-13 10:39:00.286468: Epoch time: 95.26 s
+2026-11-13 10:39:01.092293: 
+2026-11-13 10:39:01.098227: Epoch 243
+2026-11-13 10:39:01.124280: Current learning rate: 0.0004
+2026-11-13 10:40:36.444752: train_loss 0.5123
+2026-11-13 10:40:36.601526: val_loss 1.3274
+2026-11-13 10:40:36.671983: Pseudo dice [np.float64(nan)]
+2026-11-13 10:40:36.703907: Epoch time: 95.35 s
+2026-11-13 10:40:37.439598: 
+2026-11-13 10:40:37.447327: Epoch 244
+2026-11-13 10:40:37.462095: Current learning rate: 0.00035
+2026-11-13 10:42:11.975621: train_loss 0.524
+2026-11-13 10:42:11.985286: val_loss 1.1114
+2026-11-13 10:42:11.994588: Pseudo dice [np.float64(nan)]
+2026-11-13 10:42:12.004766: Epoch time: 94.54 s
+2026-11-13 10:42:13.058916: 
+2026-11-13 10:42:13.065020: Epoch 245
+2026-11-13 10:42:13.070295: Current learning rate: 0.0003
+2026-11-13 10:43:46.675299: train_loss 0.4999
+2026-11-13 10:43:46.686845: val_loss 1.2393
+2026-11-13 10:43:46.696666: Pseudo dice [np.float64(nan)]
+2026-11-13 10:43:46.706333: Epoch time: 93.62 s
+2026-11-13 10:43:47.766598: 
+2026-11-13 10:43:47.772600: Epoch 246
+2026-11-13 10:43:47.778292: Current learning rate: 0.00024
+2026-11-13 10:45:23.405437: train_loss 0.4999
+2026-11-13 10:45:23.414316: val_loss 1.312
+2026-11-13 10:45:23.424107: Pseudo dice [np.float64(nan)]
+2026-11-13 10:45:23.434019: Epoch time: 95.64 s
+2026-11-13 10:45:24.594094: 
+2026-11-13 10:45:24.607229: Epoch 247
+2026-11-13 10:45:24.618473: Current learning rate: 0.00019
+2026-11-13 10:47:00.578032: train_loss 0.4806
+2026-11-13 10:47:00.586392: val_loss 1.2494
+2026-11-13 10:47:00.598278: Pseudo dice [np.float64(nan)]
+2026-11-13 10:47:00.607422: Epoch time: 95.98 s
+2026-11-13 10:47:01.485154: 
+2026-11-13 10:47:01.491388: Epoch 248
+2026-11-13 10:47:01.497396: Current learning rate: 0.00013
+2026-11-13 10:48:37.325637: train_loss 0.4709
+2026-11-13 10:48:37.351485: val_loss 1.2922
+2026-11-13 10:48:37.361716: Pseudo dice [np.float64(nan)]
+2026-11-13 10:48:37.374079: Epoch time: 95.84 s
+2026-11-13 10:48:38.405665: 
+2026-11-13 10:48:38.412757: Epoch 249
+2026-11-13 10:48:38.419056: Current learning rate: 7e-05
+2026-11-13 10:50:13.751142: train_loss 0.5138
+2026-11-13 10:50:13.762116: val_loss 1.3938
+2026-11-13 10:50:13.776473: Pseudo dice [np.float64(nan)]
+2026-11-13 10:50:13.787816: Epoch time: 95.35 s
+2026-11-13 10:50:15.031860: Training done.
+training done: G:\BrainMetShare\experiments\E01_det_vs_seg\data\nnUNet_results\Dataset901_E01T1c\E01HeatmapTrainer__nnUNetPlans__3d_fullres\fold_0\checkpoint_final.pth

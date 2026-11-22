@@ -1,0 +1,19 @@
+{"utc": "2026-11-17T21:47:09Z", "event": "session_start", "cases": "preflight", "n_cases": 8, "pending": ["pred_A", "pred_B", "pred_C2", "cases", "bootstrap", "aggregate"], "gpus": ["NVIDIA GeForce RTX 3070 Ti", "NVIDIA GeForce RTX 5060 Ti"], "prereg_sha256": "65191155508ca124ec01153c0a5e8ee5cf6ebecb5add9f495775a9fb82828993", "code": {"run_eval.py": "64601a1aa52bc9b7e77fe9df5e2c517f5adf8fa6de4b5d81df3576b82fab0509", "evaluate.py": "17ab36b627f1761d47c31043a42175e9bc1a7fe326dcbdadc3936ffa46705e75", "two_stage.py": "25491e1e759e81784cafd4ce1bf123e0e065faad4d6e1131b76ad4952b885681", "decode.py": "fa5c787cc6ba416bc7ec75a5df5a7b91f6c9e7c2d71b4a5882db853dcc3b1eaf", "predict.py": "010981c5bbcc009a548f5732390caea08cccb8c830a46359078bcd50d851e755", "c2_predict.py": "ed40b20cd9f48162ccf11be5564a4313c94412a1cb2e5e3cdd26bd9c2b85d22d", "params.py": "2b8f54ae438f1919bed4c55ee392980eef3fa75a8789abc7133ed0833a28f9d3"}}
+{"utc": "2026-11-17T21:47:09Z", "event": "stage_start", "stage": "pred_A", "todo": 8, "total": 8, "gpus": ["3070ti", "5060ti"]}
+{"utc": "2026-11-17T21:47:22Z", "event": "worker_done", "stage": "pred_A", "gpu": "5060ti", "done_by_worker": 0, "slow_path_crops": null}
+{"utc": "2026-11-17T21:47:22Z", "event": "worker_done", "stage": "pred_A", "gpu": "3070ti", "done_by_worker": 8, "slow_path_crops": null}
+{"utc": "2026-11-17T21:47:29Z", "event": "stage_done", "stage": "pred_A", "seconds": 20.0, "workers": {"0_3070ti": 0, "1_5060ti": 0}}
+{"utc": "2026-11-17T21:47:29Z", "event": "stage_start", "stage": "pred_B", "todo": 8, "total": 8, "gpus": ["3070ti", "5060ti"]}
+{"utc": "2026-11-17T21:47:44Z", "event": "worker_done", "stage": "pred_B", "gpu": "3070ti", "done_by_worker": 7, "slow_path_crops": null}
+{"utc": "2026-11-17T21:47:46Z", "event": "worker_done", "stage": "pred_B", "gpu": "5060ti", "done_by_worker": 1, "slow_path_crops": null}
+{"utc": "2026-11-17T21:47:49Z", "event": "stage_done", "stage": "pred_B", "seconds": 20.0, "workers": {"0_3070ti": 0, "1_5060ti": 0}}
+{"utc": "2026-11-17T21:47:49Z", "event": "stage_start", "stage": "pred_C2", "todo": 8, "total": 8, "gpus": ["3070ti", "5060ti"]}
+{"utc": "2026-11-17T21:49:24Z", "event": "worker_done", "stage": "pred_C2", "gpu": "5060ti", "done_by_worker": 3, "slow_path_crops": 0}
+{"utc": "2026-11-17T21:49:47Z", "event": "worker_done", "stage": "pred_C2", "gpu": "3070ti", "done_by_worker": 5, "slow_path_crops": 0}
+{"utc": "2026-11-17T21:49:49Z", "event": "stage_done", "stage": "pred_C2", "seconds": 120.0, "workers": {"0_3070ti": 0, "1_5060ti": 0}}
+{"utc": "2026-11-17T21:49:49Z", "event": "stage_start", "stage": "cases", "todo": 8, "total": 8, "workers": 6}
+{"utc": "2026-11-17T21:49:51Z", "event": "stage_done", "stage": "cases", "seconds": 1.6}
+{"utc": "2026-11-17T21:49:51Z", "event": "stage_start", "stage": "bootstrap", "chunks_todo": 3, "chunks": 3, "workers": 6}
+{"utc": "2026-11-17T21:49:52Z", "event": "stage_done", "stage": "bootstrap", "seconds": 1.1}
+{"utc": "2026-11-17T21:49:52Z", "event": "stage_start", "stage": "aggregate"}
+{"utc": "2026-11-17T21:49:52Z", "event": "done", "summary": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\results\\eval_preflight\\summary.json", "verdicts": {"H1": false, "H2": false, "H3": false, "H4": false, "H5": true, "H6": false}}

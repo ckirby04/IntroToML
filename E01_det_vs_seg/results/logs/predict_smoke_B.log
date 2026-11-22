@@ -1,0 +1,28 @@
+There are 2 cases in the source folder
+I am processing 0 out of 1 (max process ID is 0, we start counting with 0!)
+There are 2 cases that I would like to predict
+overwrite was set to False, so I am only working on cases that haven't been predicted yet. That's 2 cases.
+perform_everything_on_device: True
+perform_everything_on_device: True
+{
+ "arm": "B",
+ "trainer": "E01HeatmapTrainer",
+ "checkpoint_sha256": "93ae9e401acf97a4aaab4e5324658fdd2edcd7b28339e3234b208bf10b595d42",
+ "epoch": 250,
+ "mirror_axes": [
+  0,
+  1,
+  2
+ ],
+ "tile_step_size": 0.5,
+ "use_gaussian": true,
+ "use_mirroring": true,
+ "precision": "fp32",
+ "b_wrapper": "cat([0, logit]) -> softmax[1] = sigmoid(logit)",
+ "cases": "smoke",
+ "n_cases": 2,
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "seconds": 14.1,
+ "utc": "2026-11-13T19:11:16Z",
+ "missing": []
+}

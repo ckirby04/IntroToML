@@ -1,0 +1,50 @@
+5187 cases (3727 Tr), 148 duplicate file names
+  500/5187  17s
+  1000/5187  24s
+  1500/5187  30s
+  2000/5187  37s
+  2500/5187  44s
+  3000/5187  54s
+  3500/5187  64s
+  4000/5187  72s
+  4500/5187  79s
+  5000/5187  90s
+built 5187 cases in 93s
+{
+ "Tr": {
+  "images": 3727,
+  "wells": 22,
+  "fovs": 44,
+  "n_polygons": 1194182,
+  "n_instances": 1194095,
+  "n_lost": 87,
+  "overlap_px": 21461138,
+  "n_empty_after_gap": 0,
+  "n_fragmented": 47168,
+  "n_cc_multi_instance": 0
+ },
+ "Ts": {
+  "images": 1460,
+  "wells": 9,
+  "fovs": 18,
+  "n_polygons": 444634,
+  "n_instances": 444600,
+  "n_lost": 34,
+  "overlap_px": 8285546,
+  "n_empty_after_gap": 2,
+  "n_fragmented": 21935,
+  "n_cc_multi_instance": 0
+ },
+ "shared_wells": 0,
+ "test_wells_by_line": {
+  "A172_C7": 152,
+  "BT474_D3": 168,
+  "BV2_A4": 152,
+  "Huh7_A12": 184,
+  "MCF7_H4": 184,
+  "SHSY5Y_A10": 176,
+  "SKOV3_E4": 132,
+  "SKOV3_F4": 136,
+  "SkBr3_G3": 176
+ }
+}

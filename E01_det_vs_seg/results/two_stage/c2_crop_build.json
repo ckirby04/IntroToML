@@ -1,0 +1,13 @@
+{
+ "scans": 357,
+ "lesions": 3825,
+ "crops": 5737,
+ "by_kind": {
+  "neg_bright": 956,
+  "neg_rand": 956,
+  "pos": 3825
+ },
+ "negatives_with_lesion_voxels": 1785,
+ "seconds": 90.6,
+ "utc": "2026-11-13T22:55:57Z"
+}

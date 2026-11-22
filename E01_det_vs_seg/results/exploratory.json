@@ -1,0 +1,165 @@
+{
+ "note": "post-hoc descriptive only; not pre-registered; not used to change anything",
+ "training": {
+  "A": {
+   "epochs": 250,
+   "train_loss": {
+    "0": -0.0872,
+    "49": -0.6995,
+    "99": -0.7254,
+    "149": -0.7472,
+    "199": -0.7694,
+    "249": -0.7758
+   },
+   "val_loss_fold0": {
+    "0": -0.2248,
+    "49": -0.704,
+    "99": -0.6706,
+    "149": -0.7058,
+    "199": -0.7127,
+    "249": -0.7506
+   },
+   "val_loss_min_epoch": 233,
+   "val_loss_min": -0.7927,
+   "median_epoch_s": 90.6,
+   "total_train_h": 6.35
+  },
+  "B": {
+   "epochs": 250,
+   "train_loss": {
+    "0": 3.1074,
+    "49": 1.0238,
+    "99": 0.8407,
+    "149": 0.729,
+    "199": 0.6199,
+    "249": 0.5138
+   },
+   "val_loss_fold0": {
+    "0": 3.0423,
+    "49": 1.1365,
+    "99": 1.0235,
+    "149": 1.0783,
+    "199": 1.0059,
+    "249": 1.3938
+   },
+   "val_loss_min_epoch": 226,
+   "val_loss_min": 0.8444,
+   "median_epoch_s": 97.0,
+   "total_train_h": 6.72
+  }
+ },
+ "lesion_scores_by_bin": {
+  "<3": {
+   "n": 225,
+   "A_detection_score": {
+    "median": 0.893,
+    "q25": 0.0,
+    "q75": 1.0
+   },
+   "B_detection_score": {
+    "median": 0.473,
+    "q25": 0.227,
+    "q75": 0.593
+   },
+   "B_max_heatmap_inside_lesion": {
+    "median": 0.458,
+    "q25": 0.227,
+    "q75": 0.59
+   },
+   "A_max_prob_inside_lesion": {
+    "median": 0.842,
+    "q25": 0.0,
+    "q75": 1.0
+   },
+   "no_B_point_at_0.05": 33,
+   "no_A_point_at_0.05": 97,
+   "B_below_0.3": 65,
+   "A_below_0.5": 107,
+   "B_points_per_detected_lesion_mean": 1.0
+  },
+  "3-10": {
+   "n": 549,
+   "A_detection_score": {
+    "median": 1.0,
+    "q25": 1.0,
+    "q75": 1.0
+   },
+   "B_detection_score": {
+    "median": 0.645,
+    "q25": 0.5,
+    "q75": 0.75
+   },
+   "B_max_heatmap_inside_lesion": {
+    "median": 0.644,
+    "q25": 0.497,
+    "q75": 0.749
+   },
+   "A_max_prob_inside_lesion": {
+    "median": 1.0,
+    "q25": 1.0,
+    "q75": 1.0
+   },
+   "no_B_point_at_0.05": 25,
+   "no_A_point_at_0.05": 73,
+   "B_below_0.3": 68,
+   "A_below_0.5": 84,
+   "B_points_per_detected_lesion_mean": 1.04
+  },
+  ">10": {
+   "n": 92,
+   "A_detection_score": {
+    "median": 1.0,
+    "q25": 1.0,
+    "q75": 1.0
+   },
+   "B_detection_score": {
+    "median": 0.766,
+    "q25": 0.367,
+    "q75": 0.879
+   },
+   "B_max_heatmap_inside_lesion": {
+    "median": 0.766,
+    "q25": 0.367,
+    "q75": 0.872
+   },
+   "A_max_prob_inside_lesion": {
+    "median": 1.0,
+    "q25": 1.0,
+    "q75": 1.0
+   },
+   "no_B_point_at_0.05": 3,
+   "no_A_point_at_0.05": 2,
+   "B_below_0.3": 15,
+   "A_below_0.5": 2,
+   "B_points_per_detected_lesion_mean": 1.71,
+   "B_detection_score_by_esd_half": {
+    "smaller_half_esd_range": [
+     10.1,
+     17.0
+    ],
+    "smaller_half_median_B": 0.833,
+    "larger_half_esd_range": [
+     17.2,
+     39.6
+    ],
+    "larger_half_median_B": 0.613
+   }
+  }
+ },
+ "complementarity_at_fixed_ops": {
+  "both_detect": 644,
+  "only_A": 29,
+  "only_B": 74,
+  "neither": 119,
+  "only_A_by_bin": {
+   "<3": 2,
+   "3-10": 13,
+   ">10": 14
+  },
+  "only_B_by_bin": {
+   "<3": 44,
+   "3-10": 29,
+   ">10": 1
+  }
+ }
+}

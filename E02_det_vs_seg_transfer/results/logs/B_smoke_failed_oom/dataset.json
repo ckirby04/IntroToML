@@ -1,0 +1,26 @@
+{
+    "channel_names": {
+        "0": "phase"
+    },
+    "labels": {
+        "background": 0,
+        "cell": 1
+    },
+    "numTraining": 3727,
+    "file_ending": ".png",
+    "e02": {
+        "source": "LIVECell 2021 (CC BY-NC 4.0), official train+val -> Tr, test -> Ts",
+        "raw_sha256": [
+            "548a2c2853c422b1ccc6519c1fae470ac5945243cbbd50d08ed7fe81196383a6",
+            "*images.zip",
+            "9eb5805ca031cebcd70bab4a4aa0c89d98646c206d333803a8d5b10ea7fe9960",
+            "*annotations/livecell_coco_test.json",
+            "6788902479bc0ffd2838fb7160a778078f464ea6034ed76bb5a0e40263cb9e78",
+            "*annotations/livecell_coco_train.json",
+            "eb72a68f5065d9ade1805b496eecdcd14ca275e5f1bc6aae7e07279bddadfdc7",
+            "*annotations/livecell_coco_val.json"
+        ],
+        "label": "gapped binary (setup_dataset docstring)",
+        "instances": "G:\\BrainMetShare\\experiments\\E02_det_vs_seg_transfer\\data\\instances"
+    }
+}

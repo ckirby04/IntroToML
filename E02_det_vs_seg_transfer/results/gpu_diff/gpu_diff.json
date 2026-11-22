@@ -1,0 +1,62 @@
+{
+ "cases": 24,
+ "gpus": [
+  "NVIDIA GeForce RTX 5060 Ti",
+  "NVIDIA GeForce RTX 3070 Ti"
+ ],
+ "env": {
+  "torch": [
+   "2.10.0+cu128",
+   "2.10.0+cu128"
+  ],
+  "cudnn": [
+   91002,
+   91002
+  ],
+  "tf32_conv": [
+   true,
+   true
+  ],
+  "tf32_matmul": [
+   false,
+   false
+  ]
+ },
+ "A": {
+  "max_abs_diff": 0.0007604062557220459,
+  "mean_abs_diff": 6.597434506261379e-06,
+  "identical_images": 0,
+  "px": 8785920,
+  "px_flip_floor": 33,
+  "px_flip_mask": 52,
+  "points_1": 1000,
+  "points_2": 1001,
+  "points_same_set": 993,
+  "max_score_diff": 0.00038117170333862305,
+  "images_points_identical": 16,
+  "mask_threshold": 0.5
+ },
+ "B": {
+  "max_abs_diff": 0.0005622506141662598,
+  "mean_abs_diff": 5.376126514041364e-06,
+  "identical_images": 0,
+  "px": 8785920,
+  "px_flip_floor": 245,
+  "px_flip_mask": 35,
+  "points_1": 12429,
+  "points_2": 12428,
+  "points_same_set": 12411,
+  "max_score_diff": 0.00034265220165252686,
+  "images_points_identical": 14,
+  "mask_threshold": 0.3
+ },
+ "C2": {
+  "crops": 12429,
+  "max_abs_diff": 0.015869140625,
+  "px_flip_mask": 12997,
+  "assigned_differs": 0,
+  "max_a2_diff": 0.0004215836524963379,
+  "regions_differ": 4599,
+  "note": "probs stored as fp16; region/a2/assigned computed from fp32 maps"
+ }
+}

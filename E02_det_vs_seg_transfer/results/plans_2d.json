@@ -1,0 +1,148 @@
+{
+ "patch_size": [
+  640,
+  768
+ ],
+ "batch_size": 7,
+ "spacing": [
+  1.0,
+  1.0
+ ],
+ "median_image_size_in_voxels": [
+  520.0,
+  704.0
+ ],
+ "normalization_schemes": [
+  "ZScoreNormalization"
+ ],
+ "use_mask_for_norm": [
+  false
+ ],
+ "architecture": {
+  "network_class_name": "dynamic_network_architectures.architectures.unet.PlainConvUNet",
+  "arch_kwargs": {
+   "n_stages": 8,
+   "features_per_stage": [
+    32,
+    64,
+    128,
+    256,
+    512,
+    512,
+    512,
+    512
+   ],
+   "conv_op": "torch.nn.modules.conv.Conv2d",
+   "kernel_sizes": [
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "strides": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "n_conv_per_stage": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "n_conv_per_stage_decoder": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "conv_bias": true,
+   "norm_op": "torch.nn.modules.instancenorm.InstanceNorm2d",
+   "norm_op_kwargs": {
+    "eps": 1e-05,
+    "affine": true
+   },
+   "dropout_op": null,
+   "dropout_op_kwargs": null,
+   "nonlin": "torch.nn.LeakyReLU",
+   "nonlin_kwargs": {
+    "inplace": true
+   }
+  },
+  "_kw_requires_import": [
+   "conv_op",
+   "norm_op",
+   "dropout_op",
+   "nonlin"
+  ]
+ },
+ "transpose_forward": [
+  0,
+  1,
+  2
+ ]
+}

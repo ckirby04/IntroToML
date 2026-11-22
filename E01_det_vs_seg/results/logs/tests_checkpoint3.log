@@ -1,0 +1,36 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.15, pytest-9.0.2, pluggy-1.6.0 -- G:\BrainMetShare\1.60_artifacts\venv-1.60\Scripts\python.exe
+rootdir: G:\BrainMetShare\experiments\E01_det_vs_seg
+plugins: anyio-4.12.0, jaxtyping-0.3.9, langsmith-0.7.3, zarr-3.1.6
+collecting ... collected 28 items
+
+code/tests/test_decode.py::test_decoder_recovers_planted_peaks PASSED    [  3%]
+code/tests/test_decode.py::test_decoder_with_scores_and_noise PASSED     [  7%]
+code/tests/test_decode.py::test_nms_merges_peaks_closer_than_radius_but_not_farther PASSED [ 10%]
+code/tests/test_decode.py::test_nms_halfwidth_in_mm PASSED               [ 14%]
+code/tests/test_decode.py::test_plateau_gives_one_point_first_in_c_order PASSED [ 17%]
+code/tests/test_decode.py::test_model_a_points_one_per_component_at_argmax PASSED [ 21%]
+code/tests/test_ds_downsampling.py::test_nnunet_ds_keeps_float_dtype PASSED [ 25%]
+code/tests/test_ds_downsampling.py::test_nnunet_ds_drops_off_lattice_peaks PASSED [ 28%]
+code/tests/test_ds_downsampling.py::test_per_scale_render_keeps_exactly_one_peak_per_lesion PASSED [ 32%]
+code/tests/test_evaluate.py::test_point_rule_tolerance_and_fp PASSED     [ 35%]
+code/tests/test_evaluate.py::test_point_rule_uses_physical_spacing PASSED [ 39%]
+code/tests/test_evaluate.py::test_point_can_hit_two_close_lesions PASSED [ 42%]
+code/tests/test_evaluate.py::test_size_bins_half_open_upper PASSED       [ 46%]
+code/tests/test_evaluate.py::test_merged_components_and_centroid_outside PASSED [ 50%]
+code/tests/test_evaluate.py::test_froc_cpm_and_paired_bootstrap_small PASSED [ 53%]
+code/tests/test_heatmap.py::test_gaussian_centered_and_mm_scaled_with_anisotropic_spacing PASSED [ 57%]
+code/tests/test_heatmap.py::test_tiny_lesions_get_a_peak[vox0] PASSED    [ 60%]
+code/tests/test_heatmap.py::test_tiny_lesions_get_a_peak[vox1] PASSED    [ 64%]
+code/tests/test_heatmap.py::test_hollow_shell_anchor_is_inside_lesion PASSED [ 67%]
+code/tests/test_heatmap.py::test_anchor_ties_go_to_centroid_then_c_order PASSED [ 71%]
+code/tests/test_heatmap.py::test_two_lesions_overlapping_gaussians_take_max PASSED [ 75%]
+code/tests/test_heatmap.py::test_empty_mask PASSED                       [ 78%]
+code/tests/test_loss.py::test_loss_ordering PASSED                       [ 82%]
+code/tests/test_loss.py::test_loss_matches_hand_computation PASSED       [ 85%]
+code/tests/test_loss.py::test_toy_overfit_loss_decreases_on_real_backbone PASSED [ 89%]
+code/tests/test_trainer_integration.py::test_ds_transform_swapped PASSED [ 92%]
+code/tests/test_trainer_integration.py::test_targets_and_one_step PASSED [ 96%]
+code/tests/test_trainer_integration.py::test_output_layer_one_channel PASSED [100%]
+
+============================= 28 passed in 32.76s =============================

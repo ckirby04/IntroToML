@@ -1,0 +1,55 @@
+{"utc": "2026-11-10T00:32:50Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"]]}
+{"utc": "2026-11-10T00:32:50Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\A_train_20261109_183250.log"}
+{"utc": "2026-11-10T00:37:50Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 3}
+{"utc": "2026-11-10T00:37:50Z", "event": "queue_paused", "job": ["--arm", "A", "--gpu", "3070ti"]}
+{"utc": "2026-11-10T00:38:04Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"]]}
+{"utc": "2026-11-10T00:38:04Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\A_train_20261109_183804.log"}
+{"utc": "2026-11-10T00:41:32Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 3}
+{"utc": "2026-11-10T00:41:32Z", "event": "queue_paused", "job": ["--arm", "A", "--gpu", "3070ti"]}
+{"utc": "2026-11-10T21:15:21Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"]]}
+{"utc": "2026-11-10T21:15:21Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\A_train_20261110_151521.log"}
+{"utc": "2026-11-10T23:01:10Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 3}
+{"utc": "2026-11-10T23:01:10Z", "event": "queue_paused", "job": ["--arm", "A", "--gpu", "3070ti"]}
+{"utc": "2026-11-10T23:46:43Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"]]}
+{"utc": "2026-11-10T23:46:43Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\A_train_20261110_174643.log"}
+{"utc": "2026-11-11T01:27:04Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 3}
+{"utc": "2026-11-11T01:27:04Z", "event": "queue_paused", "job": ["--arm", "A", "--gpu", "3070ti"]}
+{"utc": "2026-11-11T14:15:29Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"]]}
+{"utc": "2026-11-11T14:15:29Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\A_train_20261111_081529.log"}
+{"utc": "2026-11-11T15:35:26Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-11T15:35:26Z", "event": "job_start", "job": ["--arm", "B", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\B_train_20261111_093526.log"}
+{"utc": "2026-11-11T18:34:08Z", "event": "job_end", "job": ["--arm", "B", "--gpu", "3070ti"], "exit": 3}
+{"utc": "2026-11-11T18:34:08Z", "event": "queue_paused", "job": ["--arm", "B", "--gpu", "3070ti"]}
+{"utc": "2026-11-12T16:55:34Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"]]}
+{"utc": "2026-11-12T16:55:34Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\A_train_20261112_105534.log"}
+{"utc": "2026-11-12T16:55:41Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-12T16:55:41Z", "event": "job_start", "job": ["--arm", "B", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\B_train_20261112_105541.log"}
+{"utc": "2026-11-12T19:02:20Z", "event": "job_end", "job": ["--arm", "B", "--gpu", "3070ti"], "exit": 3}
+{"utc": "2026-11-12T19:02:20Z", "event": "queue_paused", "job": ["--arm", "B", "--gpu", "3070ti"]}
+{"utc": "2026-11-12T20:34:02Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"]]}
+{"utc": "2026-11-12T20:34:02Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\A_train_20261112_143402.log"}
+{"utc": "2026-11-12T20:34:21Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-12T20:34:21Z", "event": "job_start", "job": ["--arm", "B", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\B_train_20261112_143421.log"}
+{"utc": "2026-11-12T22:37:02Z", "event": "job_end", "job": ["--arm", "B", "--gpu", "3070ti"], "exit": 3}
+{"utc": "2026-11-12T22:37:02Z", "event": "queue_paused", "job": ["--arm", "B", "--gpu", "3070ti"]}
+{"utc": "2026-11-13T14:09:47Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"]]}
+{"utc": "2026-11-13T14:09:47Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\A_train_20261113_080947.log"}
+{"utc": "2026-11-13T14:10:13Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-13T14:10:13Z", "event": "job_start", "job": ["--arm", "B", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\B_train_20261113_081013.log"}
+{"utc": "2026-11-13T16:50:17Z", "event": "job_end", "job": ["--arm", "B", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-13T16:50:17Z", "event": "queue_done"}
+{"utc": "2026-11-14T20:21:24Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"], ["--arm", "C2", "--gpu", "5060ti"]]}
+{"utc": "2026-11-14T20:21:24Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\A_train_20261114_142124.log"}
+{"utc": "2026-11-14T20:21:29Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-14T20:21:29Z", "event": "job_start", "job": ["--arm", "B", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\B_train_20261114_142129.log"}
+{"utc": "2026-11-14T20:21:34Z", "event": "job_end", "job": ["--arm", "B", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-14T20:21:34Z", "event": "job_start", "job": ["--arm", "C2", "--gpu", "5060ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\C2_train_20261114_142134.log"}
+{"utc": "2026-11-14T20:22:14Z", "event": "queue_stopped_manually", "job": ["--arm", "C2", "--gpu", "5060ti"], "note": "owner: do not start full training; killed during dataloader start-up, 0 epochs, no checkpoint; folder moved to data/failed_runs/C2_aborted_startup_20261114"}
+{"utc": "2026-11-15T15:30:20Z", "event": "queue_start", "jobs": [["--arm", "A", "--gpu", "3070ti"], ["--arm", "B", "--gpu", "3070ti"], ["--arm", "C2", "--gpu", "5060ti"]]}
+{"utc": "2026-11-15T15:30:20Z", "event": "job_start", "job": ["--arm", "A", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\A_train_20261115_093020.log"}
+{"utc": "2026-11-15T15:30:38Z", "event": "job_end", "job": ["--arm", "A", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-15T15:30:38Z", "event": "job_start", "job": ["--arm", "B", "--gpu", "3070ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\B_train_20261115_093038.log"}
+{"utc": "2026-11-15T15:30:43Z", "event": "job_end", "job": ["--arm", "B", "--gpu", "3070ti"], "exit": 0}
+{"utc": "2026-11-15T15:30:43Z", "event": "job_start", "job": ["--arm", "C2", "--gpu", "5060ti"], "stdout": "G:\\BrainMetShare\\experiments\\E01_det_vs_seg\\results\\logs\\C2_train_20261115_093043.log"}
+{"utc": "2026-11-15T23:12:12Z", "event": "job_end", "job": ["--arm", "C2", "--gpu", "5060ti"], "exit": 0}
+{"utc": "2026-11-15T23:12:12Z", "event": "queue_done"}

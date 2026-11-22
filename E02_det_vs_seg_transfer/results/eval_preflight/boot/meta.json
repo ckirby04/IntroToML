@@ -1,0 +1,8 @@
+{
+ "n_resamples": 50,
+ "seed": 20261116,
+ "n_wells": 8,
+ "w_sha256": "e4a66b22c4914d095336d212d78ce58c0ad3fb396ff941c32783ffee357bd3ac",
+ "chunk": 20,
+ "case_ids_sha256": "d0d24e66c4af09adb049de6e5632a9942133dd2053945b58a09c86977f4fbe50"
+}
