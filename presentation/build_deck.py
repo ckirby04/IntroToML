@@ -223,7 +223,6 @@ def point_colors(chart, colors):
 
 # ---------- 1. Title ----------
 s = new_slide(dark=True)
-text(s, 0.8, 1.35, 6.8, 0.4, "INTRO TO ML  ·  PROJECT PROGRESS", size=14, color=SOFT, bold=True)
 text(s, 0.8, 1.9, 6.9, 1.3, "Detect or segment?", size=54, color=WHITE, font=HEAD, bold=True)
 text(s, 0.8, 3.15, 6.6, 1.2, "Finding brain metastases on MRI with one nnU-Net, trained two ways",
      size=22, color=SOFT)
@@ -538,7 +537,7 @@ notes(s, "To compare fairly, both models are scored as detectors. A point counts
 
 # ---------- 11. Results ----------
 s = new_slide()
-title(s, "Overall a tie, but they miss different lesions")
+title(s, "Overall, a tie, but they miss different lesions")
 for i, (lab, col, val) in enumerate([("A", A_C, "0.768"), ("B", B_C, "0.773")]):
     y = 1.65 + i * 1.35
     box(s, 0.6, y, 3.9, 1.15)
@@ -668,32 +667,10 @@ notes(s, "Three takeaways. The objective changes which lesions you find. Turning
          "splitting touching objects, better-calibrated scores, more seeds, and having a reader check whether some "
          "false positives are real lesions. (~50 s)")
 
-# ---------- 15. Contributions ----------
-s = new_slide()
-title(s, "Contributions")
-box(s, 0.6, 1.6, 12.1, 4.85)
-badge(s, 1.0, 2.0, "CK", INK, d=1.1, size=26)
-text(s, 2.4, 2.05, 6.0, 0.55, "Clark Kirby", size=24, bold=True, font=HEAD)
-text(s, 2.4, 2.6, 6.0, 0.45, "Individual project: all work", size=15, color=MUTED)
-contrib = ["Problem framing and background research",
-           "Data preparation and patient-level train/test split",
-           "Pre-registration of both experiments",
-           "Heatmap trainer, point decoding and evaluation code, with unit tests",
-           "Training all models (A, B, crop segmenter) on a local GPU",
-           "Two-stage cascade, LIVECell transfer study, analysis and slides"]
-for i, c in enumerate(contrib):
-    col, row = divmod(i, 3)
-    x = 2.4 + col * 5.0
-    y = 3.4 + row * 0.85
-    box(s, x, y + 0.12, 0.18, 0.18, fill=B_C, shape=MSO_SHAPE.OVAL)
-    text(s, x + 0.35, y, 4.5, 0.8, c, size=16)
-notes(s, "This was an individual project, so I did all of it. (~10 s)")
-
-# ---------- 16. Thanks ----------
+# ---------- 15. Thanks ----------
 s = new_slide(dark=True)
 text(s, 0.8, 2.3, 11.7, 1.3, "Thank you", size=54, color=WHITE, font=HEAD, bold=True)
-text(s, 0.8, 3.6, 11.7, 0.8, "Questions?", size=26, color=SOFT)
-text(s, 0.8, 5.6, 11.7, 0.5, "Code and full results: github.com/ckirby04/IntroToML", size=16, color=SOFT)
+text(s, 0.8, 5.6, 11.7, 0.5, "Code and full results: github.com/ckirby04/detectThenSegment", size=16, color=SOFT)
 notes(s, "Thanks, happy to take questions.")
 
 prs.save(OUT)
